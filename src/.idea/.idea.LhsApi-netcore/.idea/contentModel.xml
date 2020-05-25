@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\yincu\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\yincu\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_LhsApi-netcore.-1341946738.00" t="ExcludeRecursive" />
+    <e p="D:\code\LhsApi\src" t="IncludeFlat">
+      <e p=".editorconfig" t="Include" />
+      <e p="Core" t="Include">
+        <e p="Core.Cache" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Core.Cache.csproj" t="IncludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Core.Cache.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Core.Data" t="IncludeRecursive">
+          <e p="BaseService.cs" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Core.Data.csproj" t="IncludeRecursive" />
+          <e p="IBaseService.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Core.Data.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="PageResponse.cs" t="Include" />
+          <e p="SQLServer" t="Include">
+            <e p="SQLServerDbConnection.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Core.Security" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Core.Security.csproj" t="IncludeRecursive" />
+          <e p="EncryptHelper.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Core.Security.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="PasswordHelper.cs" t="Include" />
+        </e>
+        <e p="Core.Sms" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Core.Sms.csproj" t="IncludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Core.Sms.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="TencentSMSSDK" t="Include">
+            <e p="SelfTencentSmsHelper.cs" t="Include" />
+            <e p="SmsSender.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Core.System" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Core.System.csproj" t="IncludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Core.System.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Core.Util" t="IncludeRecursive">
+          <e p="AppsettingsUtility.cs" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Common" t="Include">
+            <e p="ValidMsgModel.cs" t="Include" />
+          </e>
+          <e p="CommonHelper.cs" t="Include" />
+          <e p="Core.Util.csproj" t="IncludeRecursive" />
+          <e p="Encrypt.cs" t="Include" />
+          <e p="EnumHelper.cs" t="Include" />
+          <e p="ExcelHelper.cs" t="Include" />
+          <e p="JsonHelper.cs" t="Include" />
+          <e p="Log4NetHelper.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Core.Util.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="SettingModel" t="Include">
+            <e p="AllSetting.cs" t="Include" />
+            <e p="AppSetting.cs" t="Include" />
+            <e p="ConnectionSetting.cs" t="Include" />
+            <e p="EasyCachingSetting.cs" t="Include" />
+            <e p="GetWaySetting.cs" t="Include" />
+            <e p="JwtSetting.cs" t="Include" />
+            <e p="LoggingSetting.cs" t="Include" />
+            <e p="TencentCloudSeting.cs" t="Include" />
+          </e>
+          <e p="StringExtension.cs" t="Include" />
+          <e p="SystemMonitorHelper.cs" t="Include" />
+          <e p="TencentCloudApiHelper.cs" t="Include" />
+          <e p="UploadFile.cs" t="Include" />
+        </e>
+      </e>
+      <e p="LhsApi-netcore.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Service" t="Include">
+        <e p="Lhs.Common" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="CommonMessage.cs" t="Include" />
+          <e p="ConfigurationManager.cs" t="Include" />
+          <e p="Const" t="Include">
+            <e p="CacheConst.cs" t="Include" />
+            <e p="CommonConst.cs" t="Include" />
+            <e p="MenuConst.cs" t="Include" />
+            <e p="NumberConst.cs" t="Include" />
+            <e p="ProjectConst.cs" t="Include" />
+            <e p="UserConst.cs" t="Include" />
+          </e>
+          <e p="Enum" t="Include">
+            <e p="ApproveEnum.cs" t="Include" />
+            <e p="AuthEnum.cs" t="Include" />
+            <e p="CommonEnum.cs" t="Include" />
+            <e p="ConstructionEnum.cs" t="Include" />
+            <e p="MenuEnum.cs" t="Include" />
+            <e p="ProjectEnum.cs" t="Include" />
+            <e p="SchoolIntentionEnum.cs" t="Include" />
+            <e p="WorkerEnum.cs" t="Include" />
+          </e>
+          <e p="Lhs.Common.csproj" t="IncludeRecursive" />
+          <e p="MessageResultCode.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Lhs.Common.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="PicHelper.cs" t="Include" />
+          <e p="ResponseMessage.cs" t="Include" />
+          <e p="SmsHelper.cs" t="Include" />
+        </e>
+        <e p="Lhs.Entity" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="DbEntity" t="Include">
+            <e p="BaseEntity.cs" t="Include" />
+            <e p="DbModel" t="Include">
+              <e p="ModulePermissionModel.cs" t="Include" />
+              <e p="T_ApprovalFlow.cs" t="Include" />
+              <e p="T_AuxMaterialCategory.cs" t="Include" />
+              <e p="T_AuxMaterialItem.cs" t="Include" />
+              <e p="T_AuxMaterialTemplate.cs" t="Include" />
+              <e p="T_AuxMaterialTemplateItem.cs" t="Include" />
+              <e p="T_Company.cs" t="Include" />
+              <e p="T_ConstructionManageCategory.cs" t="Include" />
+              <e p="T_ConstructionManageCheckStandard.cs" t="Include" />
+              <e p="T_ConstructionManageCheckTask.cs" t="Include" />
+              <e p="T_ConstructionManageTemplate.cs" t="Include" />
+              <e p="T_ConstructionManageTemplateItem.cs" t="Include" />
+              <e p="T_ConstructionPlanItem.cs" t="Include" />
+              <e p="T_ConstructionPlanStage.cs" t="Include" />
+              <e p="T_ConstructionPlanTemplate.cs" t="Include" />
+              <e p="T_ConstructionPlanTemplateItem.cs" t="Include" />
+              <e p="T_Department.cs" t="Include" />
+              <e p="T_DisclosureItem.cs" t="Include" />
+              <e p="T_DisclosureTemplate.cs" t="Include" />
+              <e p="T_DisclosureTemplateItem.cs" t="Include" />
+              <e p="T_FollowupLog.cs" t="Include" />
+              <e p="T_FollowupLogImg.cs" t="Include" />
+              <e p="T_FollowupType.cs" t="Include" />
+              <e p="T_LocalMaterialItem.cs" t="Include" />
+              <e p="T_LocalMaterialTemplate.cs" t="Include" />
+              <e p="T_LocalMaterialTemplateItem.cs" t="Include" />
+              <e p="T_MainMaterialCategory.cs" t="Include" />
+              <e p="T_MainMaterialItem.cs" t="Include" />
+              <e p="T_MainMaterialTemplate.cs" t="Include" />
+              <e p="T_MainMaterialTemplateItem.cs" t="Include" />
+              <e p="T_Menu.cs" t="Include" />
+              <e p="T_OperateLog.cs" t="Include" />
+              <e p="T_Position.cs" t="Include" />
+              <e p="T_PositionPermission.cs" t="Include" />
+              <e p="T_PreDisclosureItem.cs" t="Include" />
+              <e p="T_Project.cs" t="Include" />
+              <e p="T_ProjectApprovalRecord.cs" t="Include" />
+              <e p="T_ProjectAssignTask.cs" t="Include" />
+              <e p="T_ProjectConstructionCheckRecord.cs" t="Include" />
+              <e p="T_ProjectConstructionCheckStandard.cs" t="Include" />
+              <e p="T_ProjectConstructionCheckTask.cs" t="Include" />
+              <e p="T_ProjectConstructionManage.cs" t="Include" />
+              <e p="T_ProjectConstructionPlan.cs" t="Include" />
+              <e p="T_ProjectDisclosure.cs" t="Include" />
+              <e p="T_ProjectFlowRecord.cs" t="Include" />
+              <e p="T_ProjectInstallTask.cs" t="Include" />
+              <e p="T_ProjectInstallTaskItem.cs" t="Include" />
+              <e p="T_ProjectMaterialItem.cs" t="Include" />
+              <e p="T_ProjectMeasureTask.cs" t="Include" />
+              <e p="T_ProjectMeasureTaskItem.cs" t="Include" />
+              <e p="T_ProjectOrderTask.cs" t="Include" />
+              <e p="T_ProjectOrderTaskItem.cs" t="Include" />
+              <e p="T_ProjectPickMaterial.cs" t="Include" />
+              <e p="T_ProjectPlanStage.cs" t="Include" />
+              <e p="T_ProjectQualityApprovalRecord.cs" t="Include" />
+              <e p="T_ProjectQualityRecord.cs" t="Include" />
+              <e p="T_ProjectUserFlowPosition.cs" t="Include" />
+              <e p="T_ProjectWorker.cs" t="Include" />
+              <e p="T_ProjectWorkerChangeRecord.cs" t="Include" />
+              <e p="T_PunchCardRecord.cs" t="Include" />
+              <e p="T_QualityApprovalImg.cs" t="Include" />
+              <e p="T_QualityCategory.cs" t="Include" />
+              <e p="T_QualityContent.cs" t="Include" />
+              <e p="T_QualityItem.cs" t="Include" />
+              <e p="T_QualityItemCategory.cs" t="Include" />
+              <e p="T_QualityTemplate.cs" t="Include" />
+              <e p="T_QualityTemplateItem.cs" t="Include" />
+              <e p="T_Region.cs" t="Include" />
+              <e p="T_SignCheckImg.cs" t="Include" />
+              <e p="T_SignCheckRecord.cs" t="Include" />
+              <e p="T_SignRecord.cs" t="Include" />
+              <e p="T_StopWorkReason.cs" t="Include" />
+              <e p="T_StopWorkRecord.cs" t="Include" />
+              <e p="T_User.cs" t="Include" />
+              <e p="T_UserPosition.cs" t="Include" />
+              <e p="T_Worker.cs" t="Include" />
+              <e p="T_WorkType.cs" t="Include" />
+            </e>
+            <e p="ProjectMeasureTask.cs" t="Include" />
+            <e p="T_AuditLog.cs" t="Include" />
+          </e>
+          <e p="ForeignDtos" t="Include">
+            <e p="Request" t="Include">
+              <e p="Approve" t="Include">
+                <e p="ReqFlowApprove.cs" t="Include" />
+                <e p="ReqProjectFlowRecord.cs" t="Include" />
+              </e>
+              <e p="Project" t="Include">
+                <e p="AddProjectRequ.cs" t="Include" />
+                <e p="MatchingTemplate.cs" t="Include" />
+                <e p="ProjectListRequ.cs" t="Include" />
+              </e>
+              <e p="ReqAuth.cs" t="Include" />
+              <e p="ReqBase.cs" t="Include" />
+              <e p="ReqPageBase.cs" t="Include" />
+              <e p="User" t="Include">
+                <e p="ReqSearchUser.cs" t="Include" />
+                <e p="UserRoleInfo.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Response" t="Include">
+              <e p="BaseResponse.cs" t="Include" />
+              <e p="Construction" t="Include">
+                <e p="CheckRecordInfo.cs" t="Include" />
+                <e p="CheckTask.cs" t="Include" />
+                <e p="LocalBasicItem.cs" t="Include" />
+                <e p="ProjectConstructionManage.cs" t="Include" />
+                <e p="TemplateInfo.cs" t="Include" />
+              </e>
+              <e p="Disclosure" t="Include">
+                <e p="DisclosureItemInfo.cs" t="Include" />
+              </e>
+              <e p="GetPaperList.cs" t="Include" />
+              <e p="GetSchoolIdAndName.cs" t="Include" />
+              <e p="GetTrainingInstitutionId.cs" t="Include" />
+              <e p="LiveClientVersion.cs" t="Include" />
+              <e p="News" t="Include">
+                <e p="ResHotNews.cs" t="Include" />
+                <e p="ResNews.cs" t="Include" />
+                <e p="ResNewsImg.cs" t="Include" />
+                <e p="ResNewsTypeOfAll.cs" t="Include" />
+                <e p="RespNewsDetailForWebsite.cs" t="Include" />
+                <e p="RespNewsForWebsite.cs" t="Include" />
+              </e>
+              <e p="PlatformMenu" t="Include">
+                <e p="ButtonsData.cs" t="Include" />
+                <e p="childrenMenu.cs" t="Include" />
+                <e p="MenuData.cs" t="Include" />
+                <e p="MenuModel.cs" t="Include" />
+                <e p="ResModulePermission.cs" t="Include" />
+                <e p="TreeViewModel.cs" t="Include" />
+              </e>
+              <e p="Project" t="Include">
+                <e p="PlanProjectList.cs" t="Include" />
+                <e p="ProjectListResp.cs" t="Include" />
+                <e p="UserProjectInfo.cs" t="Include" />
+              </e>
+              <e p="Role" t="Include">
+                <e p="RespRoleList.cs" t="Include" />
+              </e>
+              <e p="Task" t="Include">
+                <e p="TaskDetailsResponse.cs" t="Include" />
+                <e p="TaskListResponse.cs" t="Include" />
+              </e>
+              <e p="U9" t="Include">
+                <e p="JFSendProStatus.cs" t="Include" />
+              </e>
+              <e p="User" t="Include">
+                <e p="ResUserList.cs" t="Include" />
+                <e p="UserInfo.cs" t="Include" />
+                <e p="UserPosition.cs" t="Include" />
+              </e>
+              <e p="UserRole" t="Include">
+                <e p="ResUserRole.cs" t="Include" />
+                <e p="SaveRoleParams.cs" t="Include" />
+              </e>
+              <e p="Worker" t="Include">
+                <e p="WorkerChangeInfo.cs" t="Include" />
+                <e p="WorkerInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Lhs.Entity.csproj" t="IncludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Lhs.Entity.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Lhs.Interface" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="IAuditRepository.cs" t="Include" />
+          <e p="ICompanyRepository.cs" t="Include" />
+          <e p="IConstructionManageCategoryRepository.cs" t="Include" />
+          <e p="IConstructionManageCheckRecordRepository.cs" t="Include" />
+          <e p="IConstructionManageCheckStandardRepository.cs" t="Include" />
+          <e p="IConstructionManageCheckTaskRepository.cs" t="Include" />
+          <e p="IConstructionManageTemplateItemRepository.cs" t="Include" />
+          <e p="IConstructionManageTemplateRepository.cs" t="Include" />
+          <e p="IConstructionPlanItemRepository.cs" t="Include" />
+          <e p="IConstructionPlanStageRepository.cs" t="Include" />
+          <e p="IConstructionPlanTemplateItemRepository.cs" t="Include" />
+          <e p="IConstructionPlanTemplateRepository.cs" t="Include" />
+          <e p="IConstructionRepository.cs" t="Include" />
+          <e p="IConstructionTemplateRepository.cs" t="Include" />
+          <e p="IDenpendencyRepository.cs" t="Include" />
+          <e p="IDepartmentRepository.cs" t="Include" />
+          <e p="IDisclosureItemRepository.cs" t="Include" />
+          <e p="IDisclosureTemplateItemRepository.cs" t="Include" />
+          <e p="IDisclosureTemplateRepository.cs" t="Include" />
+          <e p="IFollowUpLogRepository.cs" t="Include" />
+          <e p="ILocalMaterialItemRepository.cs" t="Include" />
+          <e p="IMainMaterialCategoryRepository.cs" t="Include" />
+          <e p="IMainMaterialItemRepository.cs" t="Include" />
+          <e p="IPlatformBaseService.cs" t="Include" />
+          <e p="IPositionRepository.cs" t="Include" />
+          <e p="IProjectAssignTaskRepository.cs" t="Include" />
+          <e p="IProjectConstructionCheckStandardRepository.cs" t="Include" />
+          <e p="IProjectConstructionCheckTaskRepository.cs" t="Include" />
+          <e p="IProjectConstructionPlanRepository.cs" t="Include" />
+          <e p="IProjectConstructionRepository.cs" t="Include" />
+          <e p="IProjectFlowRecordRepository.cs" t="Include" />
+          <e p="IProjectInstallTaskItemRepository.cs" t="Include" />
+          <e p="IProjectInstallTaskRepository.cs" t="Include" />
+          <e p="IProjectMaterialRepository.cs" t="Include" />
+          <e p="IProjectMeasureTaskItemRepository.cs" t="Include" />
+          <e p="IProjectMeasureTaskRepository.cs" t="Include" />
+          <e p="IProjectOrderTaskItemRepository.cs" t="Include" />
+          <e p="IProjectOrderTaskRepository.cs" t="Include" />
+          <e p="IProjectPickMaterialRepository.cs" t="Include" />
+          <e p="IProjectPlanStageRepository.cs" t="Include" />
+          <e p="IProjectQualityRecordRepository.cs" t="Include" />
+          <e p="IProjectRepository.cs" t="Include" />
+          <e p="IProjectUserFlowPositionRepository.cs" t="Include" />
+          <e p="IProjectWorkerRepository.cs" t="Include" />
+          <e p="IStopWorkReasonRepository.cs" t="Include" />
+          <e p="IStopWorkRepository.cs" t="Include" />
+          <e p="IUserPositionRepository.cs" t="Include" />
+          <e p="IUserRepository.cs" t="Include" />
+          <e p="IWorkerChangeRepository.cs" t="Include" />
+          <e p="IWorkerRepository.cs" t="Include" />
+          <e p="IWorkTypeRepository.cs" t="Include" />
+          <e p="Lhs.Interface.csproj" t="IncludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Lhs.Interface.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="SignFilterAttribute.cs" t="Include" />
+        </e>
+        <e p="Lhs.Service" t="IncludeRecursive">
+          <e p="AuditRepository.cs" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="CompanyRepository.cs" t="Include" />
+          <e p="ConstructionManageCategoryRepository.cs" t="Include" />
+          <e p="ConstructionManageCheckRecordRepository.cs" t="Include" />
+          <e p="ConstructionManageCheckStandardRepository.cs" t="Include" />
+          <e p="ConstructionManageCheckTaskRepository.cs" t="Include" />
+          <e p="ConstructionManageTemplateItemRepository.cs" t="Include" />
+          <e p="ConstructionManageTemplateRepository.cs" t="Include" />
+          <e p="ConstructionPlanItemRepository.cs" t="Include" />
+          <e p="ConstructionPlanStageRepository.cs" t="Include" />
+          <e p="ConstructionPlanTemplateItemRepository.cs" t="Include" />
+          <e p="ConstructionPlanTemplateRepository.cs" t="Include" />
+          <e p="ConstructionRepository.cs" t="Include" />
+          <e p="ConstructionTemplateRepository.cs" t="Include" />
+          <e p="DepartmentRepository.cs" t="Include" />
+          <e p="DisclosureItemRepository.cs" t="Include" />
+          <e p="DisclosureTemplateItemRepository.cs" t="Include" />
+          <e p="DisclosureTemplateRepository.cs" t="Include" />
+          <e p="FollowUpLogRepository.cs" t="Include" />
+          <e p="Lhs.Service.csproj" t="IncludeRecursive" />
+          <e p="LocalMaterialItemRepository.cs" t="Include" />
+          <e p="MainMaterialCategoryRepository.cs" t="Include" />
+          <e p="MainMaterialItemRepository.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Lhs.Service.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="PlatformBaseService.cs" t="Include" />
+          <e p="PositionRepository.cs" t="Include" />
+          <e p="ProjectAssignTaskRepository.cs" t="Include" />
+          <e p="ProjectConstructionCheckStandardRepository.cs" t="Include" />
+          <e p="ProjectConstructionCheckTaskRepository.cs" t="Include" />
+          <e p="ProjectConstructionPlanRepository.cs" t="Include" />
+          <e p="ProjectConstructionRepository.cs" t="Include" />
+          <e p="ProjectFlowRecordRepository.cs" t="Include" />
+          <e p="ProjectInstallTaskItemRepository.cs" t="Include" />
+          <e p="ProjectInstallTaskRepository.cs" t="Include" />
+          <e p="ProjectMaterialRepository.cs" t="Include" />
+          <e p="ProjectMeasureTaskItemRepository.cs" t="Include" />
+          <e p="ProjectMeasureTaskRepository.cs" t="Include" />
+          <e p="ProjectOrderTaskItemRepository.cs" t="Include" />
+          <e p="ProjectOrderTaskRepository.cs" t="Include" />
+          <e p="ProjectPickMaterialRepository.cs" t="Include" />
+          <e p="ProjectPlanStageRepository.cs" t="Include" />
+          <e p="ProjectQualityRecordRepository.cs" t="Include" />
+          <e p="ProjectRepository.cs" t="Include" />
+          <e p="ProjectUserFlowPositionRepository.cs" t="Include" />
+          <e p="ProjectWorkerRepository.cs" t="Include" />
+          <e p="StopWorkReasonRepository.cs" t="Include" />
+          <e p="StopWorkRepository.cs" t="Include" />
+          <e p="UserPositionRepository.cs" t="Include" />
+          <e p="UserRepository.cs" t="Include" />
+          <e p="WorkerChangeRepository.cs" t="Include" />
+          <e p="WorkerRepository.cs" t="Include" />
+          <e p="WorkTypeRepository.cs" t="Include" />
+        </e>
+        <e p="LhsApi" t="IncludeRecursive">
+          <e p="appsettings.Development.json" t="Include" />
+          <e p="appsettings.json" t="Include" />
+          <e p="Authorization" t="Include">
+            <e p="Jwt" t="Include">
+              <e p="Dto" t="Include">
+                <e p="JwtAuthorizationDto.cs" t="Include" />
+                <e p="JwtResponseDto.cs" t="Include" />
+              </e>
+              <e p="IJwtAppService.cs" t="Include" />
+              <e p="JwtAppService.cs" t="Include" />
+            </e>
+          </e>
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Controllers" t="Include">
+            <e p="ApproveController.cs" t="Include" />
+            <e p="CommonController.cs" t="Include" />
+            <e p="ConstructionController.cs" t="Include" />
+            <e p="DisclosureController.cs" t="Include" />
+            <e p="FollowUpLogController.cs" t="Include" />
+            <e p="HomeController.cs" t="Include" />
+            <e p="MaterialController.cs" t="Include" />
+            <e p="PlatformControllerBase.cs" t="Include" />
+            <e p="ProjectController.cs" t="Include" />
+            <e p="QualityController.cs" t="Include" />
+            <e p="SettingController.cs" t="Include" />
+            <e p="TaskController.cs" t="Include" />
+            <e p="UserController.cs" t="Include" />
+            <e p="WorkerController.cs" t="Include" />
+          </e>
+          <e p="DataServiceExtension.cs" t="Include" />
+          <e p="Dtos" t="Include">
+            <e p="Request" t="Include">
+              <e p="Approve" t="Include">
+                <e p="ReqProjectProgress.cs" t="Include" />
+              </e>
+              <e p="Auth" t="Include">
+                <e p="ReqLoginForPlatform.cs" t="Include" />
+                <e p="SecretDto.cs" t="Include" />
+              </e>
+              <e p="Common" t="Include">
+                <e p="ReqUploadImg.cs" t="Include" />
+              </e>
+              <e p="Construction" t="Include">
+                <e p="ReqAddOrEditStage.cs" t="Include" />
+                <e p="ReqAPPConstructionManageList.cs" t="Include" />
+                <e p="ReqAssign.cs" t="Include" />
+                <e p="ReqCheck.cs" t="Include" />
+                <e p="ReqCheckDetailByCheckId.cs" t="Include" />
+                <e p="ReqConstructionManageList.cs" t="Include" />
+                <e p="ReqDeleteItems.cs" t="Include" />
+                <e p="ReqDeleteItemTasks.cs" t="Include" />
+                <e p="ReqDeleteLocalBasic.cs" t="Include" />
+                <e p="ReqDeleteMainItem.cs" t="Include" />
+                <e p="ReqDeleteStages.cs" t="Include" />
+                <e p="ReqDeleteTaskCheckStandard.cs" t="Include" />
+                <e p="ReqDeleteTemplate.cs" t="Include" />
+                <e p="ReqGetStageList.cs" t="Include" />
+                <e p="ReqGetTaskCheckStandard.cs" t="Include" />
+                <e p="ReqLocalMaterialBasic.cs" t="Include" />
+                <e p="ReqManageList.cs" t="Include" />
+                <e p="ReqManageTemplateItemList.cs" t="Include" />
+                <e p="ReqSaveItem.cs" t="Include" />
+                <e p="ReqSaveItemTask.cs" t="Include" />
+                <e p="ReqSaveLocalBasic.cs" t="Include" />
+                <e p="ReqSaveMainCategory.cs" t="Include" />
+                <e p="ReqSaveMainItem.cs" t="Include" />
+                <e p="ReqSavePlanItem.cs" t="Include" />
+                <e p="ReqSavePlanItemContent.cs" t="Include" />
+                <e p="ReqSaveTaskCheckStandard.cs" t="Include" />
+                <e p="ReqSaveTemplate.cs" t="Include" />
+                <e p="ReqSaveTemplateItems.cs" t="Include" />
+                <e p="ReqTemplate.cs" t="Include" />
+              </e>
+              <e p="Disclosure" t="Include">
+                <e p="ReqDeleteDisclosure.cs" t="Include" />
+                <e p="ReqDeleteDisclosureBasic.cs" t="Include" />
+                <e p="ReqDisclosureTemplate.cs" t="Include" />
+                <e p="ReqEditDisclosureTemplateBasicItem.cs" t="Include" />
+                <e p="ReqGetProjectDisclosureBasicInfo.cs" t="Include" />
+                <e p="ReqSaveDisclosure.cs" t="Include" />
+              </e>
+              <e p="FollowUpLog" t="Include">
+                <e p="ReqAddFollowUpLog.cs" t="Include" />
+                <e p="ReqDeleteFollowUpLogType.cs" t="Include" />
+                <e p="ReqGetFollowUpLogDetail.cs" t="Include" />
+                <e p="ReqSaveFollowUpLogType.cs" t="Include" />
+              </e>
+              <e p="Material" t="Include">
+                <e p="ReqBatchSyncMaterial.cs" t="Include" />
+                <e p="ReqCancelOrderTask.cs" t="Include" />
+                <e p="ReqGetInstallTaskDetail.cs" t="Include" />
+                <e p="ReqGetMeasureTaskDetail.cs" t="Include" />
+                <e p="ReqGetOrderTaskDetail.cs" t="Include" />
+                <e p="ReqGetPickmaterialList.cs" t="Include" />
+                <e p="ReqGetProjectInstallTaskList.cs" t="Include" />
+                <e p="ReqGetProjectLocalMaterial.cs" t="Include" />
+                <e p="ReqGetProjectLocalMaterialItemList.cs" t="Include" />
+                <e p="ReqGetProjectMaterial.cs" t="Include" />
+                <e p="ReqGetProjectMaterialItemList.cs" t="Include" />
+                <e p="ReqGetProjectMeasureTaskList.cs" t="Include" />
+                <e p="ReqGetProjectOrderTaskList.cs" t="Include" />
+                <e p="ReqSubmitInstallTask.cs" t="Include" />
+                <e p="ReqSubmitMeasureTask.cs" t="Include" />
+                <e p="ReqSubmitOrderTask.cs" t="Include" />
+                <e p="ReqSubmitPickMaterial.cs" t="Include" />
+                <e p="ReqUpdateMaterialItemsFromAppToU9.cs" t="Include" />
+                <e p="ReqUpdateMaterialItemsFromU9.cs" t="Include" />
+              </e>
+              <e p="Project" t="Include">
+                <e p="ReqGetMatchingTemplate.cs" t="Include" />
+                <e p="ReqGetProjectProgressInfo.cs" t="Include" />
+                <e p="ReqSaveMatchingTemplate.cs" t="Include" />
+                <e p="ReqUserProject.cs" t="Include" />
+              </e>
+              <e p="Quality" t="Include">
+                <e p="ReqAddQualityRecord.cs" t="Include" />
+                <e p="ReqApprove.cs" t="Include" />
+                <e p="ReqDeleteQualityItem.cs" t="Include" />
+                <e p="ReqDeleteQualityItemCategory.cs" t="Include" />
+                <e p="ReqGetQualityApprovedList.cs" t="Include" />
+                <e p="ReqGetQualityDetail.cs" t="Include" />
+                <e p="ReqGetQualityItemCategoryList.cs" t="Include" />
+                <e p="ReqGetQualityItemList.cs" t="Include" />
+                <e p="ReqGetQualityRecordDetailById.cs" t="Include" />
+                <e p="ReqGetQualityRecordList.cs" t="Include" />
+                <e p="ReqSaveQualityItem.cs" t="Include" />
+                <e p="ReqSaveQualityItemCategory.cs" t="Include" />
+              </e>
+              <e p="ReqAuth.cs" t="Include" />
+              <e p="ReqBasePage.cs" t="Include" />
+              <e p="Setting" t="Include">
+                <e p="ReqAuthorizePosition.cs" t="Include" />
+                <e p="ReqDeletePosition.cs" t="Include" />
+                <e p="ReqEditUserPosition.cs" t="Include" />
+                <e p="ReqGetAllPermissionForPosition.cs" t="Include" />
+                <e p="ReqSavePosition.cs" t="Include" />
+              </e>
+              <e p="Task" t="Include">
+                <e p="ReqGetAssignTaskDetail.cs" t="Include" />
+                <e p="ReqGetTaskList.cs" t="Include" />
+              </e>
+              <e p="User" t="Include">
+                <e p="ReqDeleteCompany.cs" t="Include" />
+                <e p="ReqDeleteDepartment.cs" t="Include" />
+                <e p="ReqDeleteUser.cs" t="Include" />
+                <e p="ReqEditPassword.cs" t="Include" />
+                <e p="ReqEnableOrDisableUser.cs" t="Include" />
+                <e p="ReqLogin.cs" t="Include" />
+                <e p="ReqResetPwd.cs" t="Include" />
+                <e p="ReqUpdateCompany.cs" t="Include" />
+                <e p="ReqUpdateDepartment.cs" t="Include" />
+                <e p="ReqUpdateUser.cs" t="Include" />
+                <e p="ReqUserInfo.cs" t="Include" />
+                <e p="ReqUserList.cs" t="Include" />
+              </e>
+              <e p="Worker" t="Include">
+                <e p="ReqChange.cs" t="Include" />
+                <e p="ReqChangeList.cs" t="Include" />
+                <e p="ReqDeleteChange.cs" t="Include" />
+                <e p="ReqDeleteStopReason.cs" t="Include" />
+                <e p="ReqDeleteWorker.cs" t="Include" />
+                <e p="ReqDeleteWorkType.cs" t="Include" />
+                <e p="ReqSaveWorker.cs" t="Include" />
+                <e p="ReqSaveWorkType.cs" t="Include" />
+                <e p="ReqStartWork.cs" t="Include" />
+                <e p="ReqStopOrStartListForApp.cs" t="Include" />
+                <e p="ReqStopWork.cs" t="Include" />
+                <e p="ReqStopWorkReason.cs" t="Include" />
+                <e p="ReqWorkerList.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Response" t="Include">
+              <e p="Construction" t="Include">
+                <e p="RespAssignWorkerList.cs" t="Include" />
+                <e p="RespCheckDetail.cs" t="Include" />
+                <e p="RespCheckList.cs" t="Include" />
+                <e p="RespList.cs" t="Include" />
+                <e p="RespLocalBasicItem.cs" t="Include" />
+                <e p="RespMainMaterial.cs" t="Include" />
+                <e p="RespManageList.cs" t="Include" />
+                <e p="RespPlanList.cs" t="Include" />
+                <e p="RespStageList.cs" t="Include" />
+                <e p="RespStandardList.cs" t="Include" />
+              </e>
+              <e p="Disclosure" t="Include">
+                <e p="RespDisclosureItem.cs" t="Include" />
+                <e p="RespDisclosureTemplate.cs" t="Include" />
+              </e>
+              <e p="FollowUpLog" t="Include">
+                <e p="RespGetFollowUpLogList.cs" t="Include" />
+                <e p="RespGetFollowUpTypeList.cs" t="Include" />
+              </e>
+              <e p="Material" t="Include">
+                <e p="RespBatchSyncMaterial.cs" t="Include" />
+                <e p="RespGetInstallTaskDetail.cs" t="Include" />
+                <e p="RespGetMeasureTaskDetail.cs" t="Include" />
+                <e p="RespGetOrderTaskDetail.cs" t="Include" />
+                <e p="RespGetPickMaterialList.cs" t="Include" />
+                <e p="RespGetProjectInstallTaskList.cs" t="Include" />
+                <e p="RespGetProjectLocalMaterial.cs" t="Include" />
+                <e p="RespGetProjectLocalMaterialItemList.cs" t="Include" />
+                <e p="RespGetProjectMaterial.cs" t="Include" />
+                <e p="RespGetProjectMaterialItemList.cs" t="Include" />
+                <e p="RespGetProjectMeasureTaskList.cs" t="Include" />
+                <e p="RespGetProjectOrderTaskList.cs" t="Include" />
+              </e>
+              <e p="Project" t="Include">
+                <e p="RespGetMatchingTemplate.cs" t="Include" />
+                <e p="RespGetProjectProgressInfo.cs" t="Include" />
+                <e p="RespUserProject.cs" t="Include" />
+              </e>
+              <e p="Quality" t="Include">
+                <e p="RespGetQualityApprovedList.cs" t="Include" />
+                <e p="RespGetQualityRecordDetailByRecordId.cs" t="Include" />
+              </e>
+              <e p="ReqBasePage.cs" t="Include" />
+              <e p="Setting" t="Include">
+                <e p="RespGetAllPermissionForPosition.cs" t="Include" />
+                <e p="RespPosionInfo.cs" t="Include" />
+              </e>
+              <e p="Task" t="Include">
+                <e p="RespGetAssignTaskDetail.cs" t="Include" />
+                <e p="RespGetTaskItem.cs" t="Include" />
+              </e>
+              <e p="User" t="Include">
+                <e p="GetJFOrganization.cs" t="Include" />
+                <e p="RespBasicData.cs" t="Include" />
+                <e p="RespCompanyInfo.cs" t="Include" />
+                <e p="RespListUserInfo.cs" t="Include" />
+                <e p="RespLoginForAPP.cs" t="Include" />
+                <e p="RespUserInfo.cs" t="Include" />
+              </e>
+              <e p="Worker" t="Include">
+                <e p="RespChangeList.cs" t="Include" />
+                <e p="RespStopOrStartListForApp.cs" t="Include" />
+                <e p="RespStopWorkReason.cs" t="Include" />
+                <e p="RespWorker.cs" t="Include" />
+                <e p="RespWorkType.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Filters" t="Include">
+            <e p="ApiErrorsAttributeFilter.cs" t="Include" />
+            <e p="AuthFilter.cs" t="Include" />
+          </e>
+          <e p="Helper" t="Include">
+            <e p="MaterialHelper.cs" t="Include" />
+          </e>
+          <e p="LhsApi.csproj" t="IncludeRecursive" />
+          <e p="LhsApi.xml" t="Include" />
+          <e p="log4net.config" t="Include" />
+          <e p="logs" t="Include">
+            <e p="debug" t="Include">
+              <e p="2020-03-04" t="Include">
+                <e p="20200304.log" t="Include" />
+              </e>
+              <e p="2020-03-05" t="Include">
+                <e p="20200305.log" t="Include" />
+              </e>
+              <e p="2020-03-06" t="Include">
+                <e p="20200306.log" t="Include" />
+              </e>
+              <e p="2020-03-07" t="Include">
+                <e p="20200307.log" t="Include" />
+              </e>
+              <e p="2020-03-08" t="Include">
+                <e p="20200308.log" t="Include" />
+              </e>
+              <e p="2020-03-09" t="Include">
+                <e p="20200309.log" t="Include" />
+              </e>
+              <e p="2020-03-10" t="Include">
+                <e p="20200310.log" t="Include" />
+              </e>
+              <e p="2020-03-11" t="Include">
+                <e p="20200311.log" t="Include" />
+              </e>
+              <e p="2020-03-12" t="Include">
+                <e p="20200312.log" t="Include" />
+              </e>
+              <e p="2020-03-13" t="Include">
+                <e p="20200313.log" t="Include" />
+              </e>
+              <e p="2020-03-14" t="Include">
+                <e p="20200314.log" t="Include" />
+              </e>
+              <e p="2020-03-15" t="Include">
+                <e p="20200315.log" t="Include" />
+              </e>
+            </e>
+            <e p="error" t="Include">
+              <e p="2020-03-04" t="Include">
+                <e p="20200304.log" t="Include" />
+              </e>
+              <e p="2020-03-05" t="Include">
+                <e p="20200305.log" t="Include" />
+              </e>
+              <e p="2020-03-06" t="Include">
+                <e p="20200306.log" t="Include" />
+              </e>
+              <e p="2020-03-07" t="Include">
+                <e p="20200307.log" t="Include" />
+              </e>
+              <e p="2020-03-08" t="Include">
+                <e p="20200308.log" t="Include" />
+              </e>
+              <e p="2020-03-09" t="Include">
+                <e p="20200309.log" t="Include" />
+              </e>
+              <e p="2020-03-10" t="Include">
+                <e p="20200310.log" t="Include" />
+              </e>
+              <e p="2020-03-11" t="Include">
+                <e p="20200311.log" t="Include" />
+              </e>
+              <e p="2020-03-12" t="Include">
+                <e p="20200312.log" t="Include" />
+              </e>
+              <e p="2020-03-13" t="Include">
+                <e p="20200313.log" t="Include" />
+              </e>
+              <e p="2020-03-14" t="Include">
+                <e p="20200314.log" t="Include" />
+              </e>
+              <e p="2020-03-15" t="Include">
+                <e p="20200315.log" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Middleware" t="Include">
+            <e p="CalculateExecutionTimeMiddlewareExtension.cs" t="Include" />
+            <e p="ResponseTimeMiddleware.cs" t="Include" />
+          </e>
+          <e p="obj" t="ExcludeRecursive">
+            <e p="debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="LhsApi.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="PlatformAuthorize.cs" t="Include" />
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="launchSettings.json" t="Include" />
+            <e p="PublishProfiles" t="Include">
+              <e p="FolderProfile.pubxml" t="Include" />
+              <e p="gitlab-cd-Dev.pubxml" t="Include" />
+              <e p="gitlab-cd-Test.pubxml" t="Include" />
+            </e>
+          </e>
+          <e p="Startup.cs" t="Include" />
+          <e p="wwwroot" t="Include" />
+        </e>
+      </e>
+      <e p="Solution Items" t="Include" />
+    </e>
+  </component>
+</project>
