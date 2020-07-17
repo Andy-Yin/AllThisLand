@@ -445,14 +445,9 @@
             构造函数
             </summary>
         </member>
-        <member name="M:LhsAPI.Controllers.IndexController.GetProjectStatistics(LhsApi.Dtos.Request.ReqAuth)">
+        <member name="M:LhsAPI.Controllers.IndexController.TestBaidu(LhsApi.Dtos.Request.ReqAuth)">
             <summary>
             首页获取项目统计-后台
-            </summary>
-        </member>
-        <member name="M:LhsAPI.Controllers.IndexController.GetNewsList(LhsApi.Dtos.Request.ReqAuth)">
-            <summary>
-            首页获取消息列表-后台
             </summary>
         </member>
         <member name="T:LhsAPI.Controllers.PlatformControllerBase">

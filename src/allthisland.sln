@@ -34,7 +34,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lhs.Helper", "Service\Lhs.Helper\Lhs.Helper.csproj", "{E52EF4B8-2F99-417E-9A94-4C3ED2C1EE8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lhs.Helper", "Service\Lhs.Helper\Lhs.Helper.csproj", "{E52EF4B8-2F99-417E-9A94-4C3ED2C1EE8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.BaiDuAI", "Core\Core.BaiDuAI\Core.BaiDuAI.csproj", "{DB0FAF61-1366-4D09-91B1-B39D58796C67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -90,6 +92,10 @@ Global
 		{E52EF4B8-2F99-417E-9A94-4C3ED2C1EE8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E52EF4B8-2F99-417E-9A94-4C3ED2C1EE8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E52EF4B8-2F99-417E-9A94-4C3ED2C1EE8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB0FAF61-1366-4D09-91B1-B39D58796C67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB0FAF61-1366-4D09-91B1-B39D58796C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB0FAF61-1366-4D09-91B1-B39D58796C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB0FAF61-1366-4D09-91B1-B39D58796C67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -107,6 +113,7 @@ Global
 		{AAC88D9B-7986-4827-A2A7-29E4F5192B1D} = {18FC6384-518B-479A-9D32-1C6A81E16BCA}
 		{A7EB447C-8239-4584-89A5-3951D7AA9E44} = {C8951566-6509-4EB4-9326-EF51214E7B11}
 		{E52EF4B8-2F99-417E-9A94-4C3ED2C1EE8F} = {18FC6384-518B-479A-9D32-1C6A81E16BCA}
+		{DB0FAF61-1366-4D09-91B1-B39D58796C67} = {C8951566-6509-4EB4-9326-EF51214E7B11}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9E1460F9-EAAB-42A1-A4EA-1224F4675E97}
