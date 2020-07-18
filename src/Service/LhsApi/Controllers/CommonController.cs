@@ -27,14 +27,12 @@ namespace LhsAPI.Controllers
     [AuthFilter]
     public class CommonController : PlatformControllerBase
     {
-        private readonly IPositionRepository _positionRepository;
 
         /// <summary>
         /// 构造函数
         /// </summary>
-        public CommonController(IPositionRepository positionRepository)
+        public CommonController( )
         {
-            _positionRepository = positionRepository;
         }
 
         /// <summary>

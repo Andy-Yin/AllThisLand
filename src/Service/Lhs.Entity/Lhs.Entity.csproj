@@ -12,5 +12,9 @@
     <Folder Include="ForeignDtos\Request\Quality\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.10.4" />
+  </ItemGroup>
+
 
 </Project>

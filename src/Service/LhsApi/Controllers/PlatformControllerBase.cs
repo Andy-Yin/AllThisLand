@@ -30,61 +30,7 @@ namespace LhsAPI.Controllers
                 return -1;
             }
         }
-
-        /// <summary>
-        /// 公用方法，获取一个用户的常用信息
-        /// </summary>
-        /// <returns></returns>
-        protected async Task<ProjectUser> GetUser(IProjectRepository projectRepository, int projectId, int userId)
-        {
-            var userList = await projectRepository.GetProjectUserListByProjectId(projectId);
-            var user = userList.FirstOrDefault(u => u.UserId == userId);
-            if (user == null)
-            {
-                return new ProjectUser();
-            }
-            else
-            {
-                return user;
-            }
-        }
-
-        /// <summary>
-        /// 公用方法，获取一个项目的项目经理
-        /// </summary>
-        /// <returns></returns>
-        protected async Task<ProjectUser> GetManagerUser(IProjectRepository projectRepository, int projectId)
-        {
-            var userList = await projectRepository.GetProjectUserListByProjectId(projectId);
-            var user = userList.FirstOrDefault(u=>u.PositionId ==1);
-            if (user == null)
-            {
-                return new ProjectUser();
-            }
-            else
-            {
-                return user;
-            }
-        }
-
-        /// <summary>
-        /// 公用方法，获取一个项目的监理
-        /// </summary>
-        /// <returns></returns>
-        protected async Task<ProjectUser> GetSupervisorUser(IProjectRepository projectRepository, int projectId)
-        {
-            var userList = await projectRepository.GetProjectUserListByProjectId(projectId);
-            var user = userList.FirstOrDefault(u => u.PositionId == 4);
-            if (user == null)
-            {
-                return new ProjectUser();
-            }
-            else
-            {
-                return user;
-            }
-        }
-
+        
         /// <summary>
         /// 公用方法，生成鉴权信息，用于调用U9
         /// </summary>

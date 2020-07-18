@@ -183,7 +183,7 @@
             公用接口
             </summary>
         </member>
-        <member name="M:LhsAPI.Controllers.CommonController.#ctor(Lhs.Interface.IPositionRepository)">
+        <member name="M:LhsAPI.Controllers.CommonController.#ctor">
             <summary>
             构造函数
             </summary>
@@ -209,14 +209,14 @@
             首页
             </summary>
         </member>
-        <member name="M:LhsAPI.Controllers.IndexController.#ctor(Lhs.Interface.IProjectRepository,Lhs.Interface.IUserRepository)">
+        <member name="M:LhsAPI.Controllers.IndexController.#ctor">
             <summary>
             构造函数
             </summary>
         </member>
         <member name="M:LhsAPI.Controllers.IndexController.TestBaidu(LhsApi.Dtos.Request.ReqAuth)">
             <summary>
-            首页获取项目统计-后台
+            测试百度
             </summary>
         </member>
         <member name="T:LhsAPI.Controllers.PlatformControllerBase">
@@ -229,24 +229,6 @@
             获取当前操作者的UserID
             ！！！Controller必须要注入IHttpContextAccessor，参考AuthController
             </summary>
-        </member>
-        <member name="M:LhsAPI.Controllers.PlatformControllerBase.GetUser(Lhs.Interface.IProjectRepository,System.Int32,System.Int32)">
-            <summary>
-            公用方法，获取一个用户的常用信息
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:LhsAPI.Controllers.PlatformControllerBase.GetManagerUser(Lhs.Interface.IProjectRepository,System.Int32)">
-            <summary>
-            公用方法，获取一个项目的项目经理
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:LhsAPI.Controllers.PlatformControllerBase.GetSupervisorUser(Lhs.Interface.IProjectRepository,System.Int32)">
-            <summary>
-            公用方法，获取一个项目的监理
-            </summary>
-            <returns></returns>
         </member>
         <member name="M:LhsAPI.Controllers.PlatformControllerBase.GetAuthInfo">
             <summary>

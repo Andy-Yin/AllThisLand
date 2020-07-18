@@ -12,6 +12,7 @@ using Lhs.Common.Enum;
 using LhsApi.Dtos.Request;
 using LhsAPI.Dtos.Response.Index;
 using LhsAPI.Dtos.Response.Setting;
+using NPOI.OpenXmlFormats.Wordprocessing;
 
 namespace LhsAPI.Controllers
 {
@@ -23,20 +24,16 @@ namespace LhsAPI.Controllers
     [AuthFilter]
     public class IndexController : PlatformControllerBase
     {
-        private readonly IProjectRepository _projectRepository;
-        private readonly IUserRepository _userRepository;
 
         /// <summary>
         /// 构造函数
         /// </summary>
-        public IndexController(IProjectRepository projectRepository, IUserRepository userRepository)
+        public IndexController()
         {
-            _projectRepository = projectRepository;
-            _userRepository = userRepository;
         }
 
         /// <summary>
-        /// 首页获取项目统计-后台
+        /// 测试百度
         /// </summary>
         [HttpGet("testbaidu")]
         public async Task<ResponseMessage> TestBaidu([FromQuery] ReqAuth req)
@@ -48,14 +45,12 @@ namespace LhsAPI.Controllers
                 ErrCode = MessageResultCode.Error,
                 Data = response
             };
-            var dataList = await _projectRepository.GetAllProject();
-            var client = new Baidu.Aip.Ocr.Ocr(BaiduKey.API_KEY, BaiduKey.SECRET_KEY);
-            client.Timeout = 60000;  // 修改超时时间
-
+            
             result.ErrMsg = CommonMessage.OperateSuccess;
             result.ErrCode = MessageResultCode.Success;
-            result.Data = client.AppId;
+            result.Data = "";
             return result;
         }
+
     }
 }

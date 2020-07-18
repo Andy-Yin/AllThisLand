@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.10.4" />
     <PackageReference Include="WebApiClient.JIT" Version="1.1.1" />
   </ItemGroup>
 
