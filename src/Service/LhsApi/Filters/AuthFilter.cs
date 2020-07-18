@@ -15,7 +15,6 @@ using System.Threading.Tasks;
 using Core.Util;
 using Lhs.Common;
 using LhsApi.Dtos.Request;
-using LhsAPI.Dtos.Request.User;
 using Microsoft.AspNetCore.Mvc.Controllers;
 
 namespace LhsAPI

@@ -8,8 +8,6 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Core.Data;
 using Lhs.Common.Const;
-using LhsApi.Dtos.Request.Setting;
-using LhsApi.Dtos.Response.Setting;
 
 namespace Lhs.Service
 {
@@ -91,48 +89,6 @@ namespace Lhs.Service
             }
         }
 
-        /// <summary>
-        /// 获取操作日志
-        /// </summary>
-        public async Task<PageResponse<OperateLog>> GetOperateLogList(ReqDbOperateLog request)
-        {
-            var query = string.Empty;
-            if (!string.IsNullOrEmpty(request.Source))
-            {
-                query += $" AND logs.Source = @Source";
-            }
-            if (!string.IsNullOrEmpty(request.UserName))
-            {
-                query += $" AND u.Name LIKE @UserName";
-            }
-            if (!string.IsNullOrEmpty(request.StartTime))
-            {
-                query += $" AND logs.CreateTime >= @StartTime";
-            }
-            if (!string.IsNullOrEmpty(request.EndTime))
-            {
-                query += $" AND logs.CreateTime <= @EndTime";
-            }
-
-            var sql = $@"
-                SELECT logs.CreateTime,
-                       logs.Ip,
-                       u.Name,
-                       logs.Source,
-                       logs.ActionName,
-                       logs.RequestParameter
-                FROM dbo.T_AuditLog logs WITH (NOLOCK)
-                    LEFT JOIN dbo.T_User u WITH (NOLOCK)
-                        ON logs.UserId = u.Id
-                WHERE logs.Method != 6
-                    {query}";
-            return await this.PagedAsync<OperateLog>(sql, new
-            {
-                request.Source,
-                request.StartTime,
-                request.EndTime,
-                UserName = $"%{request.UserName}%"
-            }, "CreateTime DESC", request.Page, CommonConst.PageSize);
-        }
+       
     }
 }
