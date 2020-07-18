@@ -10,8 +10,6 @@ using Core.Data;
 using Lhs.Common.Const;
 using Lhs.Common.Enum;
 using LhsApi.Dtos.Request;
-using LhsAPI.Dtos.Response.Index;
-using LhsAPI.Dtos.Response.Setting;
 using NPOI.OpenXmlFormats.Wordprocessing;
 
 namespace LhsAPI.Controllers
@@ -30,26 +28,6 @@ namespace LhsAPI.Controllers
         /// </summary>
         public IndexController()
         {
-        }
-
-        /// <summary>
-        /// 测试百度
-        /// </summary>
-        [HttpGet("testbaidu")]
-        public async Task<ResponseMessage> TestBaidu([FromQuery] ReqAuth req)
-        {
-            var response = new RespProjectStatistics();
-            var result = new ResponseMessage
-            {
-                ErrMsg = CommonMessage.OperateFailed,
-                ErrCode = MessageResultCode.Error,
-                Data = response
-            };
-            
-            result.ErrMsg = CommonMessage.OperateSuccess;
-            result.ErrCode = MessageResultCode.Success;
-            result.Data = "";
-            return result;
         }
 
     }

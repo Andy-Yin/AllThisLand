@@ -5,24 +5,6 @@ using Lhs.Entity.DbEntity.DbModel;
 
 namespace Lhs.Entity.DbEntity
 {
-    public class MeasureTask
-    {/// <summary>
-        /// 项目Id
-        /// </summary>
-        public int ProjectId { get; set; }
-
-        /// <summary>
-        /// 测量人
-        /// </summary>
-        public int UserId { get; set; }
-
-        /// <summary>
-        /// 类型：1 主材 2 地采
-        /// </summary>
-        public EnumMaterialType Type { get; set; }
-
-        public List<MeasureTaskItem> MeasureTaskList { get; set; }
-    }
 
     public class MeasureTaskItem
     {

@@ -2,8 +2,6 @@ using Lhs.Entity.DbEntity;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Core.Data;
-using LhsApi.Dtos.Request.Setting;
-using LhsApi.Dtos.Response.Setting;
 
 namespace Lhs.Interface
 {
@@ -28,9 +26,5 @@ namespace Lhs.Interface
         void SaveSystemMonitor(int userId, string hostName, string actionName, string controllerName,
             string methodStr, string source, string ip, double executeTime, string requestParam, string responseContent, bool dev);
 
-        /// <summary>
-        /// 获取操作日志
-        /// </summary>
-        Task<PageResponse<OperateLog>> GetOperateLogList(ReqDbOperateLog request);
     }
 }

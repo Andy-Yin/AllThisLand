@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ForeignDtos\Request\Quality\" />
+    <Folder Include="DbEntity\DbModel\" />
   </ItemGroup>
 
   <ItemGroup>

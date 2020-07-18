@@ -5,8 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Core.Util;
 using Lhs.Entity.DbEntity.DbModel;
-using Lhs.Entity.ForeignDtos.Request;
 using Lhs.Interface;
+using LhsApi.Dtos.Request;
 
 namespace LhsAPI.Controllers
 {

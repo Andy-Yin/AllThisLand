@@ -20,7 +20,6 @@
     <ProjectReference Include="..\..\Core\Core.System\Core.System.csproj" />
     <ProjectReference Include="..\..\Core\Core.Util\Core.Util.csproj" />
     <ProjectReference Include="..\Lhs.Entity\Lhs.Entity.csproj" />
-    <ProjectReference Include="..\Lhs.Helper\Lhs.Helper.csproj" />
   </ItemGroup>
 
 </Project>
