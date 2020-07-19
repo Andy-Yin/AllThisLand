@@ -40,8 +40,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Hero\" />
-    <Folder Include="BattleLog\" />
+    <Folder Include="Img\Hero\" />
+    <Folder Include="Img\BattleLog\" />
+    <Folder Include="Img\" />
   </ItemGroup>
 
   <ItemGroup>
