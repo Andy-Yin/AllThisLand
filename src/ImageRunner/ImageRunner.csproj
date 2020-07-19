@@ -6,12 +6,54 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="appsettings.Development.json" />
+    <None Remove="appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.Development.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Core\Core.BaiDuAI\Core.BaiDuAI.csproj" />
+    <ProjectReference Include="..\Core\Core.Cache\Core.Cache.csproj" />
+    <ProjectReference Include="..\Core\Core.Data\Core.Data.csproj" />
+    <ProjectReference Include="..\Core\Core.Security\Core.Security.csproj" />
+    <ProjectReference Include="..\Core\Core.Sms\Core.Sms.csproj" />
+    <ProjectReference Include="..\Core\Core.System\Core.System.csproj" />
+    <ProjectReference Include="..\Core\Core.Util\Core.Util.csproj" />
+    <ProjectReference Include="..\Service\Lhs.Common\Lhs.Common.csproj" />
+    <ProjectReference Include="..\Service\Lhs.Entity\Lhs.Entity.csproj" />
+    <ProjectReference Include="..\Service\Lhs.Interface\Lhs.Interface.csproj" />
+    <ProjectReference Include="..\Service\Lhs.Service\Lhs.Service.csproj" />
+    <ProjectReference Include="..\Service\MongoDB.Entity\MongoDB.Entity.csproj" />
+    <ProjectReference Include="..\Service\MongoDB.Service\MongoDB.Service.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Hero\" />
     <Folder Include="BattleLog\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.1" />
+    <PackageReference Include="log4net" Version="2.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\3.1.0\ref\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
