@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Lhs.Interface
 {
-    public interface IAttendanceRepository : IPlatformBaseService<T_PunchCardRecord>
+    public interface IHeroRepository : IPlatformBaseService<T_Hero>
     {
        
     }

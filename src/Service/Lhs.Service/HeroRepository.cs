@@ -8,9 +8,9 @@ using Microsoft.Extensions.Configuration;
 
 namespace Lhs.Service
 {
-    public class AttendanceRepository : PlatformBaseService<T_PunchCardRecord>, IAttendanceRepository
+    public class HeroRepository : PlatformBaseService<T_Hero>, IHeroRepository
     {
-        public AttendanceRepository(IConfiguration config)
+        public HeroRepository(IConfiguration config)
         {
             Config = config;
         }
