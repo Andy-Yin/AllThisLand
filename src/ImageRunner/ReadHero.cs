@@ -1,7 +1,10 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
+using System.Threading;
 using Core.BaiDuAI;
 using Lhs.Interface;
 
@@ -20,25 +23,46 @@ namespace ImageRunner
         public static void GeneralHeroInfo()
         {
             var baseHeroImgFolder = "\\Img\\Hero\\";
-
+            var basePath = Directory.GetCurrentDirectory();
+            baseHeroImgFolder = Path.Combine(basePath, baseHeroImgFolder);
             // 读取所有文件名
+            var imgList = GetFilesIncludingSubfolders(baseHeroImgFolder);
+
             // 读取所有图片
+            foreach (var imgPath in imgList)
+            {
+                var image = File.ReadAllBytes(imgPath);
 
-            var image = File.ReadAllBytes("C:\\Users\\v-cunyin\\Desktop\\率土之滨\\1.jpg");
+                // 调用通用文字识别, 图片参数为本地图片，可能会抛出网络等异常，请使用try/catch捕获
+                var result = client.GeneralBasic(image);
+                Console.WriteLine(result);
+                // 如果有可选参数
+                var options = new Dictionary<string, object>{
+                    {"language_type", "CHN_ENG"},
+                    {"detect_direction", "true"},
+                    {"detect_language", "true"},
+                    {"probability", "true"}
+                };
+                // 带参数调用通用文字识别, 图片参数为本地图片
+                result = client.GeneralBasic(image, options);
+                Console.WriteLine(result);
 
-            // 调用通用文字识别, 图片参数为本地图片，可能会抛出网络等异常，请使用try/catch捕获
-            var result = client.GeneralBasic(image);
-            Console.WriteLine(result);
-            // 如果有可选参数
-            var options = new Dictionary<string, object>{
-                {"language_type", "CHN_ENG"},
-                {"detect_direction", "true"},
-                {"detect_language", "true"},
-                {"probability", "true"}
-            };
-            // 带参数调用通用文字识别, 图片参数为本地图片
-            result = client.GeneralBasic(image, options);
-            Console.WriteLine(result);
+                Thread.Sleep(5000);
+            }
+
+            
         }
+
+        /// <summary>
+        /// 获取文件夹下所有图片
+        /// </summary>
+        public static List<string> GetFilesIncludingSubfolders(string path, string searchPattern= "*.jpg")
+        {
+            List<string> paths = new List<string>();
+
+            paths.AddRange(Directory.GetFiles(path, searchPattern).ToList());
+            return paths;
+        }
+
     }
 }
