@@ -9,4 +9,9 @@
     <ProjectReference Include="..\Core\Core.BaiDuAI\Core.BaiDuAI.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Hero\" />
+    <Folder Include="BattleLog\" />
+  </ItemGroup>
+
 </Project>

@@ -9,10 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DbEntity\DbModel\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="MongoDB.Driver" Version="2.10.4" />
   </ItemGroup>
 
