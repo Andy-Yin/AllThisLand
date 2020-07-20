@@ -54,14 +54,14 @@ namespace ImageRunner
             Configuration = builder.Build();
         }
 
-        /// <summary>
-        /// This method gets called by the runtime. Use this method to add services to the container.
-        /// </summary>
-        /// <param name="services"></param>
-        /// <returns></returns>
-        public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddSingleton<IHeroRepository, HeroRepository>();
-        }
+        ///// <summary>
+        ///// This method gets called by the runtime. Use this method to add services to the container.
+        ///// </summary>
+        ///// <param name="services"></param>
+        ///// <returns></returns>
+        //public void ConfigureServices(IServiceCollection services)
+        //{
+        //    services.AddSingleton<IHeroRepository, HeroRepository>();
+        //}
     }
 }

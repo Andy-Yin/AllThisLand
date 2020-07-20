@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading;
 using Core.BaiDuAI;
 using Lhs.Interface;
+using Newtonsoft.Json;
 
 namespace ImageRunner
 {
@@ -20,13 +21,13 @@ namespace ImageRunner
             _heroRepository = heroRepository;
         }
 
-        public static void GeneralHeroInfo()
+        public void GeneralHeroInfo()
         {
-            var baseHeroImgFolder = "\\Img\\Hero\\";
-            var basePath = Directory.GetCurrentDirectory();
-            baseHeroImgFolder = Path.Combine(basePath, baseHeroImgFolder);
+            //var baseHeroImgFolder = "\\Img\\Hero\\";
+            var basePath = "D:\\code\\AllThisLand\\src\\ImageRunner\\Img\\Hero\\"; // Directory.GetCurrentDirectory();
+            // var heroImgFolder = Path.Combine(basePath, baseHeroImgFolder);
             // 读取所有文件名
-            var imgList = GetFilesIncludingSubfolders(baseHeroImgFolder);
+            var imgList = GetFilesIncludingSubfolders(basePath);
 
             // 读取所有图片
             foreach (var imgPath in imgList)
@@ -45,7 +46,9 @@ namespace ImageRunner
                 };
                 // 带参数调用通用文字识别, 图片参数为本地图片
                 result = client.GeneralBasic(image, options);
+
                 Console.WriteLine(result);
+                //BaiduAIResult model = JsonConvert.SerializeObject(result);
 
                 Thread.Sleep(5000);
             }
@@ -54,9 +57,17 @@ namespace ImageRunner
         }
 
         /// <summary>
+        /// 处理成实体
+        /// </summary>
+        /// <param name="baiduAiResult"></param>
+        private void PartToModel(BaiduAIResult baiduAiResult)
+        {
+
+        }
+        /// <summary>
         /// 获取文件夹下所有图片
         /// </summary>
-        public static List<string> GetFilesIncludingSubfolders(string path, string searchPattern= "*.jpg")
+        private static List<string> GetFilesIncludingSubfolders(string path, string searchPattern= "*.jpg")
         {
             List<string> paths = new List<string>();
 
