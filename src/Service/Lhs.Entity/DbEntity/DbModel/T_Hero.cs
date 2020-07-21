@@ -15,6 +15,8 @@ namespace Lhs.Entity.DbEntity.DbModel
         {
         }
 
+        public int Id { get; set; }
+
         public string Name { get; set; }
 
         public string Cost { get; set; }
@@ -26,7 +28,7 @@ namespace Lhs.Entity.DbEntity.DbModel
         public int Star { get; set; }
 
         /// <summary>
-        /// 性别，男-1，女-2
+        /// 性别，男-1，女-0
         /// </summary>
         public bool Gender { get; set; }
 
