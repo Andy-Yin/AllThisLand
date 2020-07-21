@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using Core.BaiDuAI;
+using Lhs.Entity.DbEntity.DbModel;
 using Lhs.Interface;
 using Newtonsoft.Json;
 
@@ -29,6 +30,7 @@ namespace ImageRunner
             // 读取所有文件名
             var imgList = GetFilesIncludingSubfolders(basePath);
 
+            var heroList = new List<T_Hero>();
             // 读取所有图片
             foreach (var imgPath in imgList)
             {
@@ -42,18 +44,24 @@ namespace ImageRunner
                     {"language_type", "CHN_ENG"},
                     {"detect_direction", "true"},
                     {"detect_language", "true"},
-                    {"probability", "true"}
+                    {"probability", "false"}
                 };
                 // 带参数调用通用文字识别, 图片参数为本地图片
                 result = client.GeneralBasic(image, options);
 
                 Console.WriteLine(result);
-                //BaiduAIResult model = JsonConvert.SerializeObject(result);
+                BaiduAIResult model = result.ToObject<BaiduAIResult>();
 
-                Thread.Sleep(5000);
+                // 识别出武将的数据
+
+                var hero = new T_Hero();
+
+                heroList.Add(hero);
+
+                Thread.Sleep(500);
             }
 
-            
+            _heroRepository.AddListAsync(heroList);
         }
 
         /// <summary>

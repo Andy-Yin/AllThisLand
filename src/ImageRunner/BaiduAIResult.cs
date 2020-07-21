@@ -8,7 +8,7 @@ namespace ImageRunner
     {
         public string log_id { get; set; }
         public int words_result_num { get; set; }
-        public List<Words> words_result { get; set; }
+        public List<WordsArray> words_result { get; set; }
 
         //{
         //    "log_id": 2471272194,
@@ -21,10 +21,9 @@ namespace ImageRunner
         //}
     }
 
-    public class Words
+    public class WordsArray
     {
-        public string Key { get; set; }
-        public string Value { get; set; }
+        public string Words { get; set; }
 
     }
 }
