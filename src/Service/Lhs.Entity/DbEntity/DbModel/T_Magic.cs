@@ -20,7 +20,12 @@ namespace Lhs.Entity.DbEntity.DbModel
         public string Name { get; set; }
 
         /// <summary>
-        /// 兵种
+        /// 类型，主动、被动等
+        /// </summary>
+        public EnumMagicType Type { get; set; }
+
+        /// <summary>
+        /// 兵种类型
         /// </summary>
         public EnumCorps Corps { get; set; }
 
@@ -30,11 +35,51 @@ namespace Lhs.Entity.DbEntity.DbModel
         public int AtkRange { get; set; }
 
         /// <summary>
-        /// 目标
+        /// 目标类型
         /// </summary>
-        public int Target { get; set; }
+        public int TargetType { get; set; }
+
+        /// <summary>
+        /// 目标数量
+        /// </summary>
+        public int TargetNum { get; set; }
+
+        /// <summary>
+        /// 发动几率
+        /// </summary>
+        public double Probability { get; set; }
+
+        /// <summary>
+        /// 发动几率每级增加
+        /// </summary>
+        public double ProbabilityInc { get; set; }
     }
 
+    /// <summary>
+    /// 战法类型
+    /// </summary>
+    public enum EnumMagicType
+    {
+        /// <summary>
+        /// 指挥
+        /// </summary>
+        ZhiHui = 1,
+
+        /// <summary>
+        /// 主动
+        /// </summary>
+        ZhuDong = 2,
+
+        /// <summary>
+        /// 被动
+        /// </summary>
+        BeiDong = 3,
+
+        /// <summary>
+        /// 追击
+        /// </summary>
+        ZhuiJi = 4
+    }
 }
 
 
