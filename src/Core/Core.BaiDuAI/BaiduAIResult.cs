@@ -1,8 +1,6 @@
-using System;
 using System.Collections.Generic;
-using System.Text;
 
-namespace ImageRunner
+namespace Core.BaiDuAI
 {
     public class BaiduAIResult
     {

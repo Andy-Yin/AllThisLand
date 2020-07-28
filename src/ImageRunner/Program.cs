@@ -21,12 +21,10 @@ namespace ImageRunner
                 .AddSingleton<IHeroRepository, HeroRepository>()
                 .BuildServiceProvider();
 
-            ReadHero readHero = new ReadHero(serviceProvider.GetService<HeroRepository>());
-            readHero.GeneralHeroInfo();
+            ReadBattleLog readBattleLog = new ReadBattleLog(serviceProvider.GetService<HeroRepository>());
+            var result =  readBattleLog.GeneralBattleLog();
         }
 
-
-     
         //public void GeneralBasicUrlDemo()
         //{
         //    var url = "https//www.x.com/sample.jpg";
