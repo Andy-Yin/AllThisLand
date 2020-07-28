@@ -10,6 +10,10 @@ namespace BattleEngine
         {
         }
 
+        public void InitFromTero(T_Hero hero)
+        {
+
+        }
 
         /// <summary>
         /// 武将数据库Id

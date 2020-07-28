@@ -51,7 +51,20 @@ namespace ImageRunner
 
                 foreach (var wordsArray in model.words_result)
                 {
-                    
+                    if (wordsArray.Words.Contains("大营】")&&wordsArray.Words.Contains("级兵力:"))
+                    {
+                        var heroNameIndexStart = wordsArray.Words.IndexOf("【");
+                        var heroNameIndexEnd = wordsArray.Words.IndexOf("】");
+
+                        // 取出名字
+                        var hero1Name = wordsArray.Words.Substring(heroNameIndexStart + 1, heroNameIndexEnd - heroNameIndexStart);
+
+                        var heroInDb = heroListInDb.FirstOrDefault(h => h.Name == hero1Name);
+                        if (heroInDb!=null)
+                        {
+                            hero1.InitFromTero(heroInDb);
+                        }
+                    }
                 }
                 // 识别出武将的数据
                 var hero = new T_Hero();
