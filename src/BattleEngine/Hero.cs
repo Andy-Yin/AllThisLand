@@ -20,6 +20,8 @@ namespace BattleEngine
         /// </summary>
         public T_Hero HeroEntity { get; set; }
 
+
+
         /// <summary>
         /// 当前普通攻击
         /// </summary>
