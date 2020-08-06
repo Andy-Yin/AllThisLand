@@ -26,9 +26,16 @@ namespace BattleEngine
         public EnumTarget Target { get; set; }
 
         /// <summary>
+        /// 作用目标数量
+        /// </summary>
+        public int TargetNum { get; set; } = 1;
+
+        /// <summary>
         /// 初始发动几率
         /// </summary>
         public double PercentInit { get; set; }
+
+        public string Desc { get; set; }
     }
 
     /// <summary>
