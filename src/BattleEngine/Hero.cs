@@ -4,6 +4,9 @@ using Lhs.Entity.DbEntity.DbModel;
 
 namespace BattleEngine
 {
+    /// <summary>
+    /// 战斗时武将的数据
+    /// </summary>
     public class Hero
     {
         public Hero()
