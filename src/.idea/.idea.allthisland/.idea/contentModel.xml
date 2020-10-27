@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\v-cunyin\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\v-cunyin\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_allthisland.962591531.00" t="ExcludeRecursive" />
+    <e p="D:\code\AllThisLand\src" t="IncludeFlat">
+      <e p=".editorconfig" t="Include" />
+      <e p="allthisland.sln" t="IncludeFlat" />
+      <e p="BattleEngine" t="IncludeRecursive">
+        <e p="BattleEngine.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CommonFeature.cs" t="Include" />
+        <e p="Hero.cs" t="Include" />
+        <e p="Magic.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="BattleEngine.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Troop.cs" t="Include" />
+      </e>
+      <e p="Core" t="Include">
+        <e p="Core.BaiDuAI" t="IncludeRecursive">
+          <e p="BaiduAIResult.cs" t="Include" />
+          <e p="BaiDuHelper.cs" t="Include" />
+          <e p="BaiduKey.cs" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Core.BaiDuAI.csproj" t="IncludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Core.BaiDuAI.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Core.Cache" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Core.Cache.csproj" t="IncludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Core.Cache.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Core.Data" t="IncludeRecursive">
+          <e p="BaseService.cs" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Core.Data.csproj" t="IncludeRecursive" />
+          <e p="IBaseService.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Core.Data.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="PageResponse.cs" t="Include" />
+          <e p="SQLServer" t="Include">
+            <e p="SQLServerDbConnection.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Core.Security" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Core.Security.csproj" t="IncludeRecursive" />
+          <e p="EncryptHelper.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Core.Security.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="PasswordHelper.cs" t="Include" />
+        </e>
+        <e p="Core.Sms" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Core.Sms.csproj" t="IncludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Core.Sms.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="TencentSMSSDK" t="Include">
+            <e p="SelfTencentSmsHelper.cs" t="Include" />
+            <e p="SmsSender.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Core.System" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Core.System.csproj" t="IncludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Core.System.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Core.Util" t="IncludeRecursive">
+          <e p="AppsettingsUtility.cs" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Common" t="Include">
+            <e p="ValidMsgModel.cs" t="Include" />
+          </e>
+          <e p="CommonHelper.cs" t="Include" />
+          <e p="Core.Util.csproj" t="IncludeRecursive" />
+          <e p="Encrypt.cs" t="Include" />
+          <e p="EnumHelper.cs" t="Include" />
+          <e p="ExcelHelper.cs" t="Include" />
+          <e p="JsonHelper.cs" t="Include" />
+          <e p="Log4NetHelper.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Core.Util.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="SettingModel" t="Include">
+            <e p="AllSetting.cs" t="Include" />
+            <e p="AppSetting.cs" t="Include" />
+            <e p="ConnectionSetting.cs" t="Include" />
+            <e p="EasyCachingSetting.cs" t="Include" />
+            <e p="GetWaySetting.cs" t="Include" />
+            <e p="JwtSetting.cs" t="Include" />
+            <e p="LoggingSetting.cs" t="Include" />
+            <e p="TencentCloudSeting.cs" t="Include" />
+          </e>
+          <e p="StringExtension.cs" t="Include" />
+          <e p="SystemMonitorHelper.cs" t="Include" />
+          <e p="UploadFile.cs" t="Include" />
+        </e>
+      </e>
+      <e p="ImageRunner" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Common.cs" t="Include" />
+        <e p="ImageRunner.csproj" t="IncludeRecursive" />
+        <e p="Img" t="Include">
+          <e p="BattleLog" t="Include">
+            <e p="4.jpg" t="Include" />
+          </e>
+          <e p="Hero" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="ImageRunner.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="ReadBattleLog.cs" t="Include" />
+        <e p="ReadHero.cs" t="Include" />
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Service" t="Include">
+        <e p="Lhs.Common" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="CommonMessage.cs" t="Include" />
+          <e p="ConfigurationManager.cs" t="Include" />
+          <e p="Const" t="Include">
+            <e p="CacheConst.cs" t="Include" />
+            <e p="CommonConst.cs" t="Include" />
+            <e p="MenuConst.cs" t="Include" />
+            <e p="NumberConst.cs" t="Include" />
+            <e p="ProjectConst.cs" t="Include" />
+            <e p="UserConst.cs" t="Include" />
+          </e>
+          <e p="Enum" t="Include">
+            <e p="ApproveEnum.cs" t="Include" />
+            <e p="AuthEnum.cs" t="Include" />
+            <e p="CommonEnum.cs" t="Include" />
+            <e p="ConstructionEnum.cs" t="Include" />
+            <e p="ProjectEnum.cs" t="Include" />
+            <e p="SchoolIntentionEnum.cs" t="Include" />
+            <e p="SettingEnum.cs" t="Include" />
+            <e p="WorkerEnum.cs" t="Include" />
+          </e>
+          <e p="Lhs.Common.csproj" t="IncludeRecursive" />
+          <e p="MessageResultCode.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Lhs.Common.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="PicHelper.cs" t="Include" />
+          <e p="ResponseMessage.cs" t="Include" />
+          <e p="SmsHelper.cs" t="Include" />
+        </e>
+        <e p="Lhs.Entity" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="DbEntity" t="Include">
+            <e p="BaseEntity.cs" t="Include" />
+            <e p="DbModel" t="Include">
+              <e p="T_BattleLog.cs" t="Include" />
+              <e p="T_Hero.cs" t="Include" />
+              <e p="T_Magic.cs" t="Include" />
+            </e>
+            <e p="MeasureTask.cs" t="Include" />
+            <e p="T_AuditLog.cs" t="Include" />
+          </e>
+          <e p="Lhs.Entity.csproj" t="IncludeRecursive" />
+          <e p="MongoEntity" t="Include">
+            <e p="BaseModel.cs" t="Include" />
+            <e p="BattleLog.cs" t="Include" />
+          </e>
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Lhs.Entity.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Lhs.Interface" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="IAuditRepository.cs" t="Include" />
+          <e p="IBattleLogRepository.cs" t="Include" />
+          <e p="IDenpendencyRepository.cs" t="Include" />
+          <e p="IHeroRepository.cs" t="Include" />
+          <e p="IPlatformBaseService.cs" t="Include" />
+          <e p="Lhs.Interface.csproj" t="IncludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Lhs.Interface.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Lhs.Service" t="IncludeRecursive">
+          <e p="AuditRepository.cs" t="Include" />
+          <e p="BattleLogRepository.cs" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="HeroRepository.cs" t="Include" />
+          <e p="Lhs.Service.csproj" t="IncludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Lhs.Service.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="PlatformBaseService.cs" t="Include" />
+        </e>
+        <e p="LhsApi" t="IncludeRecursive">
+          <e p="appsettings.Development.json" t="Include" />
+          <e p="appsettings.json" t="Include" />
+          <e p="Authorization" t="Include">
+            <e p="Jwt" t="Include">
+              <e p="Dto" t="Include">
+                <e p="JwtAuthorizationDto.cs" t="Include" />
+                <e p="JwtResponseDto.cs" t="Include" />
+              </e>
+              <e p="IJwtAppService.cs" t="Include" />
+              <e p="JwtAppService.cs" t="Include" />
+            </e>
+          </e>
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Controllers" t="Include">
+            <e p="HomeController.cs" t="Include" />
+            <e p="IndexController.cs" t="Include" />
+            <e p="PlatformControllerBase.cs" t="Include" />
+          </e>
+          <e p="DataServiceExtension.cs" t="Include" />
+          <e p="Dtos" t="Include">
+            <e p="Request" t="Include">
+              <e p="ReqAuth.cs" t="Include" />
+              <e p="ReqBasePage.cs" t="Include" />
+            </e>
+            <e p="Response" t="Include">
+              <e p="ReqBasePage.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Filters" t="Include">
+            <e p="ApiErrorsAttributeFilter.cs" t="Include" />
+            <e p="AuthFilter.cs" t="Include" />
+          </e>
+          <e p="LhsApi.csproj" t="IncludeRecursive" />
+          <e p="LhsApi.xml" t="Include" />
+          <e p="log4net.config" t="Include" />
+          <e p="logs" t="Include">
+            <e p="Debug" t="Include">
+              <e p="2020-03-04" t="Include">
+                <e p="20200304.log" t="Include" />
+              </e>
+              <e p="2020-03-05" t="Include">
+                <e p="20200305.log" t="Include" />
+              </e>
+              <e p="2020-03-06" t="Include">
+                <e p="20200306.log" t="Include" />
+              </e>
+              <e p="2020-03-07" t="Include">
+                <e p="20200307.log" t="Include" />
+              </e>
+              <e p="2020-03-08" t="Include">
+                <e p="20200308.log" t="Include" />
+              </e>
+              <e p="2020-03-09" t="Include">
+                <e p="20200309.log" t="Include" />
+              </e>
+              <e p="2020-03-10" t="Include">
+                <e p="20200310.log" t="Include" />
+              </e>
+              <e p="2020-03-11" t="Include">
+                <e p="20200311.log" t="Include" />
+              </e>
+              <e p="2020-03-12" t="Include">
+                <e p="20200312.log" t="Include" />
+              </e>
+              <e p="2020-03-13" t="Include">
+                <e p="20200313.log" t="Include" />
+              </e>
+              <e p="2020-03-14" t="Include">
+                <e p="20200314.log" t="Include" />
+              </e>
+              <e p="2020-03-15" t="Include">
+                <e p="20200315.log" t="Include" />
+              </e>
+              <e p="2020-03-16" t="Include">
+                <e p="20200316.log" t="Include" />
+              </e>
+              <e p="2020-03-17" t="Include">
+                <e p="20200317.log" t="Include" />
+              </e>
+              <e p="2020-03-18" t="Include">
+                <e p="20200318.log" t="Include" />
+              </e>
+              <e p="2020-03-19" t="Include">
+                <e p="20200319.log" t="Include" />
+              </e>
+              <e p="2020-03-20" t="Include">
+                <e p="20200320.log" t="Include" />
+              </e>
+              <e p="2020-03-23" t="Include">
+                <e p="20200323.log" t="Include" />
+              </e>
+              <e p="2020-03-24" t="Include">
+                <e p="20200324.log" t="Include" />
+              </e>
+              <e p="2020-03-25" t="Include">
+                <e p="20200325.log" t="Include" />
+              </e>
+              <e p="2020-03-26" t="Include">
+                <e p="20200326.log" t="Include" />
+              </e>
+              <e p="2020-03-27" t="Include">
+                <e p="20200327.log" t="Include" />
+              </e>
+              <e p="2020-03-30" t="Include">
+                <e p="20200330.log" t="Include" />
+              </e>
+              <e p="2020-04-01" t="Include">
+                <e p="20200401.log" t="Include" />
+              </e>
+              <e p="2020-04-04" t="Include">
+                <e p="20200404.log" t="Include" />
+              </e>
+              <e p="2020-04-14" t="Include">
+                <e p="20200414.log" t="Include" />
+              </e>
+              <e p="2020-05-11" t="Include">
+                <e p="20200511.log" t="Include" />
+              </e>
+              <e p="2020-05-12" t="Include">
+                <e p="20200512.log" t="Include" />
+              </e>
+              <e p="2020-05-13" t="Include">
+                <e p="20200513.log" t="Include" />
+              </e>
+              <e p="2020-07-17" t="Include">
+                <e p="20200717.log" t="Include" />
+              </e>
+              <e p="2020-07-18" t="Include">
+                <e p="20200718.log" t="Include" />
+              </e>
+              <e p="2020-07-19" t="Include">
+                <e p="20200719.log" t="Include" />
+              </e>
+            </e>
+            <e p="error" t="Include">
+              <e p="2020-03-04" t="Include">
+                <e p="20200304.log" t="Include" />
+              </e>
+              <e p="2020-03-05" t="Include">
+                <e p="20200305.log" t="Include" />
+              </e>
+              <e p="2020-03-06" t="Include">
+                <e p="20200306.log" t="Include" />
+              </e>
+              <e p="2020-03-07" t="Include">
+                <e p="20200307.log" t="Include" />
+              </e>
+              <e p="2020-03-08" t="Include">
+                <e p="20200308.log" t="Include" />
+              </e>
+              <e p="2020-03-09" t="Include">
+                <e p="20200309.log" t="Include" />
+              </e>
+              <e p="2020-03-10" t="Include">
+                <e p="20200310.log" t="Include" />
+              </e>
+              <e p="2020-03-11" t="Include">
+                <e p="20200311.log" t="Include" />
+              </e>
+              <e p="2020-03-12" t="Include">
+                <e p="20200312.log" t="Include" />
+              </e>
+              <e p="2020-03-13" t="Include">
+                <e p="20200313.log" t="Include" />
+              </e>
+              <e p="2020-03-14" t="Include">
+                <e p="20200314.log" t="Include" />
+              </e>
+              <e p="2020-03-15" t="Include">
+                <e p="20200315.log" t="Include" />
+              </e>
+              <e p="2020-03-16" t="Include">
+                <e p="20200316.log" t="Include" />
+              </e>
+              <e p="2020-03-17" t="Include">
+                <e p="20200317.log" t="Include" />
+              </e>
+              <e p="2020-03-18" t="Include">
+                <e p="20200318.log" t="Include" />
+              </e>
+              <e p="2020-03-19" t="Include">
+                <e p="20200319.log" t="Include" />
+              </e>
+              <e p="2020-03-20" t="Include">
+                <e p="20200320.log" t="Include" />
+              </e>
+              <e p="2020-03-23" t="Include">
+                <e p="20200323.log" t="Include" />
+              </e>
+              <e p="2020-03-24" t="Include">
+                <e p="20200324.log" t="Include" />
+              </e>
+              <e p="2020-03-25" t="Include">
+                <e p="20200325.log" t="Include" />
+              </e>
+              <e p="2020-03-26" t="Include">
+                <e p="20200326.log" t="Include" />
+              </e>
+              <e p="2020-03-27" t="Include">
+                <e p="20200327.log" t="Include" />
+              </e>
+              <e p="2020-03-30" t="Include">
+                <e p="20200330.log" t="Include" />
+              </e>
+              <e p="2020-04-01" t="Include">
+                <e p="20200401.log" t="Include" />
+              </e>
+              <e p="2020-04-04" t="Include">
+                <e p="20200404.log" t="Include" />
+              </e>
+              <e p="2020-04-14" t="Include">
+                <e p="20200414.log" t="Include" />
+              </e>
+              <e p="2020-05-11" t="Include">
+                <e p="20200511.log" t="Include" />
+              </e>
+              <e p="2020-05-12" t="Include">
+                <e p="20200512.log" t="Include" />
+              </e>
+              <e p="2020-05-13" t="Include">
+                <e p="20200513.log" t="Include" />
+              </e>
+              <e p="2020-07-17" t="Include">
+                <e p="20200717.log" t="Include" />
+              </e>
+              <e p="2020-07-18" t="Include">
+                <e p="20200718.log" t="Include" />
+              </e>
+              <e p="2020-07-19" t="Include">
+                <e p="20200719.log" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Middleware" t="Include">
+            <e p="CalculateExecutionTimeMiddlewareExtension.cs" t="Include" />
+            <e p="ResponseTimeMiddleware.cs" t="Include" />
+          </e>
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="LhsApi.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="PlatformAuthorize.cs" t="Include" />
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="launchSettings.json" t="Include" />
+            <e p="PublishProfiles" t="Include">
+              <e p="FolderProfile.pubxml" t="Include" />
+              <e p="gitlab-cd-Dev.pubxml" t="Include" />
+              <e p="gitlab-cd-Test.pubxml" t="Include" />
+            </e>
+          </e>
+          <e p="Startup.cs" t="Include" />
+          <e p="wwwroot" t="Include" />
+        </e>
+        <e p="MongoDB.Entity" t="IncludeRecursive">
+          <e p="BaseModel.cs" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="MongoDB.Entity.csproj" t="IncludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="MongoDB.Entity.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Student.cs" t="Include" />
+        </e>
+        <e p="MongoDB.Service" t="IncludeRecursive">
+          <e p="BaseService.cs" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="MongoDB.Service.csproj" t="IncludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="MongoDB.Service.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="StudentService.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Solution Items" t="Include" />
+    </e>
+  </component>
+</project>

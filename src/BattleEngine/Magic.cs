@@ -8,6 +8,7 @@ namespace BattleEngine
     public class Magic
     {
         public string Name { get; set; }
+
         public EnumMagicType MagicType { get; set; }
 
         /// <summary>
