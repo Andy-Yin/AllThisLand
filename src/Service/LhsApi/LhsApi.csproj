@@ -42,7 +42,7 @@
         <PackageReference Include="Autofac.Extras.DynamicProxy" Version="4.5.0" />
         <PackageReference Include="EasyCaching.Interceptor.AspectCore" Version="0.8.2" />
         <PackageReference Include="Grpc.AspNetCore" Version="2.23.2" />
-        <PackageReference Include="MessagePack" Version="1.8.80" />
+        <PackageReference Include="MessagePack" Version="1.9.11" />
         <PackageReference Include="MessagePack.AspNetCoreMvcFormatter" Version="1.8.80" />
         <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.0" />
         <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="2.9.8">
