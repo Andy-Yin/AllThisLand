@@ -15,22 +15,19 @@ namespace ImageRunner
     public class ReadHero
     {
         private static Baidu.Aip.Ocr.Ocr client = new Baidu.Aip.Ocr.Ocr(BaiduKey.API_KEY, BaiduKey.SECRET_KEY);
-        private readonly IHeroRepository _heroRepository;
 
-        public ReadHero(IHeroRepository heroRepository)
+        public ReadHero()
         {
-            _heroRepository = heroRepository;
         }
 
         public void GeneralHeroInfo()
         {
             //var baseHeroImgFolder = "\\Img\\Hero\\";
-            var basePath = "D:\\code\\AllThisLand\\src\\ImageRunner\\Img\\Hero\\"; // Directory.GetCurrentDirectory();
+            var basePath = "D:\\test\\"; // Directory.GetCurrentDirectory();
             // var heroImgFolder = Path.Combine(basePath, baseHeroImgFolder);
             // 读取所有文件名
             var imgList = GetFilesIncludingSubfolders(basePath);
 
-            var heroList = new List<T_Hero>();
             // 读取所有图片
             foreach (var imgPath in imgList)
             {
@@ -38,7 +35,7 @@ namespace ImageRunner
 
                 // 调用通用文字识别, 图片参数为本地图片，可能会抛出网络等异常，请使用try/catch捕获
                 var result = client.GeneralBasic(image);
-                Console.WriteLine(result);
+                //Console.WriteLine(result);
                 // 如果有可选参数
                 var options = new Dictionary<string, object>{
                     {"language_type", "CHN_ENG"},
@@ -49,19 +46,55 @@ namespace ImageRunner
                 // 带参数调用通用文字识别, 图片参数为本地图片
                 result = client.GeneralBasic(image, options);
 
-                Console.WriteLine(result);
+                //Console.WriteLine(result);
                 BaiduAIResult model = result.ToObject<BaiduAIResult>();
+
+                List<string> logList = new List<string>();
+                foreach (var item in model.words_result)
+                {
+                    // 去掉空格
+                    string temp = item.Words.Trim();
+                    temp = temp.Replace("、", "");
+                    temp = temp.Replace("●", "");
+                    temp = temp.Replace("飞【", "【");
+                    temp = temp.Replace("乍【", "【");
+                    temp = temp.Replace("長【", "【");
+                    temp = temp.Replace("！详", ""); 
+                    if (temp =="X"|| temp == "战报详情")
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        if (temp.Contains("【"))
+                        {
+                            logList.Add(temp);  
+                        }
+                        else
+                        {
+                            if (logList.Any())
+                            {
+                                string continueStr = temp;
+
+                                //如果不是最开始，则拼到上一个里
+                                logList[logList.Count - 1] = logList[logList.Count - 1] + continueStr;
+                            }
+                         
+                        }
+                       
+                    }
+                }
 
                 // 识别出武将的数据
 
-                var hero = new T_Hero();
-
-                heroList.Add(hero);
+               foreach (var item in logList)
+                {
+                    Console.WriteLine(item.ToString());
+                }
 
                 Thread.Sleep(500);
             }
 
-            _heroRepository.AddListAsync(heroList);
         }
 
         /// <summary>
@@ -83,5 +116,9 @@ namespace ImageRunner
             return paths;
         }
 
+    }
+
+    public class FightingHero {
+            
     }
 }

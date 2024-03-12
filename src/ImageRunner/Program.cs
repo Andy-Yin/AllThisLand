@@ -14,15 +14,8 @@ namespace ImageRunner
         //client.Timeout = 60000;  // 修改超时时间
         static void Main(string[] args)
         {
-            //GeneralBasicDemo();
-
-            var serviceProvider = new ServiceCollection()
-                .AddLogging()
-                .AddSingleton<IHeroRepository, HeroRepository>()
-                .BuildServiceProvider();
-
-            ReadBattleLog readBattleLog = new ReadBattleLog(serviceProvider.GetService<HeroRepository>());
-            var result =  readBattleLog.GeneralBattleLog();
+            var aaa = new ReadHero();
+            aaa.GeneralHeroInfo();
         }
 
         //public void GeneralBasicUrlDemo()
