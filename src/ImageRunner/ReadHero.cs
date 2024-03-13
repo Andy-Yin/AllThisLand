@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using Core.BaiDuAI;
 using Lhs.Entity.DbEntity.DbModel;
@@ -85,12 +86,34 @@ namespace ImageRunner
                     }
                 }
 
-                // 识别出武将的数据
-
-               foreach (var item in logList)
+                foreach (var item in logList)
                 {
+                    // 使用正则表达式匹配【】中的内容:string input = "【王异】【众谋不懈】的效果使八【呈甫嵩】损失了891兵力(9099)";
+                    // 按照"【"、"】"和"损失了"来切分字符串
+                    string[] parts = item.Split(new string[] { "【", "】", "损失了" }, StringSplitOptions.RemoveEmptyEntries);
+
                     Console.WriteLine(item.ToString());
+                    // 输出切分出的内容
+                    foreach (string part in parts)
+                    {
+                        Console.WriteLine(part);
+                    }
+                    //Regex regex = new Regex(@"【(.*?)】");
+                    //MatchCollection matches = regex.Matches(item);
+
+                    //// 输出匹配到的内容
+                    //foreach (Match match in matches)
+                    //{
+                    //    Console.WriteLine(match.Groups[1].Value);
+                    //}
                 }
+
+               // // 识别出武将的数据
+
+               //foreach (var item in logList)
+               // {
+               //     Console.WriteLine(item.ToString());
+               // }
 
                 Thread.Sleep(500);
             }
