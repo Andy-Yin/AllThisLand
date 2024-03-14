@@ -23,6 +23,18 @@ class Program
                 string name = doc.DocumentNode.SelectSingleNode("//div[@class='role-content']/h1").InnerText;
                 string desc = doc.DocumentNode.SelectSingleNode("//p[@class='desc']").InnerText.Trim();
 
+                // 获取星级
+                string starClass = doc.DocumentNode.SelectSingleNode("//span[contains(@class, 'star')]/i").GetAttributeValue("class", "");
+                int starLevel = 5; // 默认为5星
+                if (starClass.Contains("star-3"))
+                {
+                    starLevel = 3;
+                }
+                else if (starClass.Contains("star-4"))
+                {
+                    starLevel = 4;
+                }
+
                 string cost = doc.DocumentNode.SelectSingleNode("//p[contains(@class, 'attr-list')]//span[contains(text(), 'cost')]").InnerText.Split('：')[1];
                 string troopType = doc.DocumentNode.SelectSingleNode("//p[contains(@class, 'attr-list')]/span[contains(text(), '兵种')]").InnerText.Trim().Split('：')[1];
                 string attackRange = doc.DocumentNode.SelectSingleNode("//p[contains(@class, 'attr-list')]/span[contains(text(), '攻击距离')]").InnerText.Trim().Split('：')[1];
@@ -39,6 +51,8 @@ class Program
 
                 Console.WriteLine("Name: " + name);
                 Console.WriteLine("desc: " + desc);
+                Console.WriteLine("星级:" + starLevel);
+
                 Console.WriteLine("troopType兵种: " + troopType);
                 Console.WriteLine("Cost: " + cost);
                 Console.WriteLine("Attack Range攻击距离: " + attackRange);
