@@ -50,74 +50,93 @@ namespace ImageRunner
                 //Console.WriteLine(result);
                 BaiduAIResult model = result.ToObject<BaiduAIResult>();
 
-                List<string> logList = new List<string>();
-                foreach (var item in model.words_result)
-                {
-                    // 去掉空格
-                    string temp = item.Words.Trim();
-                    temp = temp.Replace("、", "");
-                    temp = temp.Replace("●", "");
-                    temp = temp.Replace("飞【", "【");
-                    temp = temp.Replace("乍【", "【");
-                    temp = temp.Replace("長【", "【");
-                    temp = temp.Replace("！详", ""); 
-                    if (temp =="X"|| temp == "战报详情")
-                    {
-                        continue;
-                    }
-                    else
-                    {
-                        if (temp.Contains("【"))
-                        {
-                            logList.Add(temp);  
-                        }
-                        else
-                        {
-                            if (logList.Any())
-                            {
-                                string continueStr = temp;
+                var logList = CleanUpLog(model);
 
-                                //如果不是最开始，则拼到上一个里
-                                logList[logList.Count - 1] = logList[logList.Count - 1] + continueStr;
-                            }
-                         
-                        }
-                       
-                    }
+                StringBuilder sb = new StringBuilder();
+                foreach (var log in logList)
+                {
+                    sb.AppendLine(log.ToString());
                 }
 
-                foreach (var item in logList)
-                {
-                    // 使用正则表达式匹配【】中的内容:string input = "【王异】【众谋不懈】的效果使八【呈甫嵩】损失了891兵力(9099)";
-                    // 按照"【"、"】"和"损失了"来切分字符串
-                    string[] parts = item.Split(new string[] { "【", "】", "损失了" }, StringSplitOptions.RemoveEmptyEntries);
 
-                    Console.WriteLine(item.ToString());
-                    // 输出切分出的内容
-                    foreach (string part in parts)
-                    {
-                        Console.WriteLine(part);
-                    }
-                    //Regex regex = new Regex(@"【(.*?)】");
-                    //MatchCollection matches = regex.Matches(item);
+                //ParseLogList(logList);
 
-                    //// 输出匹配到的内容
-                    //foreach (Match match in matches)
-                    //{
-                    //    Console.WriteLine(match.Groups[1].Value);
-                    //}
-                }
+                // // 识别出武将的数据
 
-               // // 识别出武将的数据
+                //foreach (var item in logList)
+                // {
+                //     Console.WriteLine(item.ToString());
+                // }
 
-               //foreach (var item in logList)
-               // {
-               //     Console.WriteLine(item.ToString());
-               // }
-
+                var resultStr = sb.ToString();
                 Thread.Sleep(500);
             }
 
+        }
+
+        private  List<string> CleanUpLog(BaiduAIResult model)
+        {
+            List<string> logList = new List<string>();
+            foreach (var item in model.words_result)
+            {
+                // 去掉空格
+                string temp = item.Words.Trim();
+                temp = temp.Replace("、", "");
+                temp = temp.Replace("●", "");
+                temp = temp.Replace("飞【", "【");
+                temp = temp.Replace("乍【", "【");
+                temp = temp.Replace("長【", "【");
+                temp = temp.Replace("！详", "");
+                if (temp == "X" || temp == "战报详情")
+                {
+                    continue;
+                }
+                else
+                {
+                    if (temp.Contains("【"))
+                    {
+                        logList.Add(temp);
+                    }
+                    else
+                    {
+                        if (logList.Any())
+                        {
+                            string continueStr = temp;
+
+                            //如果不是最开始，则拼到上一个里
+                            logList[logList.Count - 1] = logList[logList.Count - 1] + continueStr;
+                        }
+
+                    }
+
+                }
+            }
+            return logList;
+        }
+
+        private static void ParseLogList(List<string> logList)
+        {
+            foreach (var item in logList)
+            {
+                // 使用正则表达式匹配【】中的内容:string input = "【王异】【众谋不懈】的效果使八【呈甫嵩】损失了891兵力(9099)";
+                // 按照"【"、"】"和"损失了"来切分字符串
+                string[] parts = item.Split(new string[] { "【", "】", "损失了" }, StringSplitOptions.RemoveEmptyEntries);
+
+                Console.WriteLine(item.ToString());
+                // 输出切分出的内容
+                foreach (string part in parts)
+                {
+                    Console.WriteLine(part);
+                }
+                //Regex regex = new Regex(@"【(.*?)】");
+                //MatchCollection matches = regex.Matches(item);
+
+                //// 输出匹配到的内容
+                //foreach (Match match in matches)
+                //{
+                //    Console.WriteLine(match.Groups[1].Value);
+                //}
+            }
         }
 
         /// <summary>
