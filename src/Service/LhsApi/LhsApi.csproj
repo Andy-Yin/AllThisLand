@@ -38,34 +38,34 @@
     </ItemGroup>-->
 
     <ItemGroup>
-        <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="5.0.1" />
-        <PackageReference Include="Autofac.Extras.DynamicProxy" Version="4.5.0" />
-        <PackageReference Include="EasyCaching.Interceptor.AspectCore" Version="0.8.2" />
-        <PackageReference Include="Grpc.AspNetCore" Version="2.23.2" />
-        <PackageReference Include="MessagePack" Version="1.8.80" />
-        <PackageReference Include="MessagePack.AspNetCoreMvcFormatter" Version="1.8.80" />
-        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.0" />
-        <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="2.9.8">
+        <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="9.0.0" />
+        <PackageReference Include="Autofac.Extras.DynamicProxy" Version="7.1.0" />
+        <PackageReference Include="EasyCaching.Interceptor.AspectCore" Version="1.9.2" />
+        <PackageReference Include="Grpc.AspNetCore" Version="2.61.0" />
+        <PackageReference Include="MessagePack" Version="2.5.140" />
+        <PackageReference Include="MessagePack.AspNetCoreMvcFormatter" Version="2.5.140" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.3" />
+        <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.0" />
-        <PackageReference Include="Microsoft.OpenApi" Version="1.1.4" />
-        <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.10" />
-        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.0" />
-        <PackageReference Include="SkyAPM.Agent.AspNetCore" Version="0.9.0" />
-        <PackageReference Include="StackExchange.Redis.Extensions.AspNetCore" Version="5.5.0" />
-        <PackageReference Include="StackExchange.Redis.Extensions.Newtonsoft" Version="5.5.0" />
-        <PackageReference Include="StackExchange.Redis.Extensions.Utf8Json" Version="5.5.0" />
-        <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc5" />
-        <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="5.0.0-rc8" />
-        <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.0.0-rc5" />
-        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.6.0" />
-        <PackageReference Include="System.ServiceModel.Duplex" Version="4.4.*" />
-        <PackageReference Include="System.ServiceModel.Http" Version="4.4.*" />
-        <PackageReference Include="System.ServiceModel.NetTcp" Version="4.4.*" />
-        <PackageReference Include="System.ServiceModel.Security" Version="4.4.*" />
-        <PackageReference Include="WebApiClient.JIT" Version="1.1.1" />
+        <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
+        <PackageReference Include="Microsoft.OpenApi" Version="1.6.14" />
+        <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+        <PackageReference Include="SkyAPM.Agent.AspNetCore" Version="2.1.0" />
+        <PackageReference Include="StackExchange.Redis.Extensions.AspNetCore" Version="10.2.0" />
+        <PackageReference Include="StackExchange.Redis.Extensions.Newtonsoft" Version="10.2.0" />
+        <PackageReference Include="StackExchange.Redis.Extensions.Utf8Json" Version="10.2.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="8.0.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.4.1" />
+        <PackageReference Include="System.ServiceModel.Duplex" Version="6.0.0" />
+        <PackageReference Include="System.ServiceModel.Http" Version="8.0.0" />
+        <PackageReference Include="System.ServiceModel.NetTcp" Version="8.0.0" />
+        <PackageReference Include="System.ServiceModel.Security" Version="6.0.0" />
+        <PackageReference Include="WebApiClient.JIT" Version="1.1.4" />
     </ItemGroup>
 
     <ItemGroup>

@@ -19,7 +19,9 @@ namespace Lhs.Entity.DbEntity.DbModel
 
         public string Name { get; set; }
 
-        public string Cost { get; set; }
+        public string Desc { get; set; }
+
+        public double Cost { get; set; }
 
         /// <summary>
         /// 星级
@@ -45,62 +47,62 @@ namespace Lhs.Entity.DbEntity.DbModel
         /// <summary>
         ///  攻击距离
         /// </summary>
-        public int AtkRange { get; set; }
+        public int AttackRange { get; set; }
 
         /// <summary>
-        /// 普通攻击
+        /// 初始普通攻击
         /// </summary>
-        public int Atk { get; set; }
+        public double InitialAttack { get; set; }
 
         /// <summary>
-        /// 防御
+        /// 初始防御
         /// </summary>
-        public string Defend { get; set; }
+        public double InitialDefense { get; set; }
 
         /// <summary>
-        /// 攻城
+        /// 初始攻城
         /// </summary>
-        public string Siege { get; set; }
+        public double InitialSiege { get; set; }
 
         /// <summary>
-        /// 速度
+        /// 初始速度
         /// </summary>
-        public string Speed { get; set; }
+        public double InitialSpeed { get; set; }
 
         /// <summary>
-        /// 魔法攻击
+        /// 初始魔法攻击
         /// </summary>
-        public string MAtk { get; set; }
+        public double InitialStrategy { get; set; }
 
         /// <summary>
         /// 攻击每级增加
         /// </summary>
-        public string AtkInc { get; set; }
+        public double AtkInc { get; set; }
 
         /// <summary>
         /// 防御每级增加
         /// </summary>
-        public string DefendInc { get; set; }
+        public double DefendInc { get; set; }
 
         /// <summary>
         /// 攻城每级增加
         /// </summary>
-        public string SiegeInc { get; set; }
+        public double SiegeInc { get; set; }
 
         /// <summary>
         /// 速度每级增加
         /// </summary>
-        public string SpeedInc { get; set; }
+        public double SpeedInc { get; set; }
 
         /// <summary>
         /// 魔法攻击每级增加
         /// </summary>
-        public string MAtkInc { get; set; }
+        public double MAtkInc { get; set; }
 
         /// <summary>
         /// 默认战法
         /// </summary>
-        public string DefaultMagicId { get; set; }
+        public string DefaultMagic { get; set; }
     }
 
     /// <summary>
