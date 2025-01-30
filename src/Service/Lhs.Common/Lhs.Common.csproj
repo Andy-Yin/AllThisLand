@@ -18,7 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\Core.Sms\Core.Sms.csproj" />
     <ProjectReference Include="..\..\Core\Core.Util\Core.Util.csproj" />
   </ItemGroup>
 

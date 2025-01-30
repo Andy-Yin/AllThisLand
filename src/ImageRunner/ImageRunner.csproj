@@ -28,7 +28,6 @@
     <ProjectReference Include="..\Core\Core.BaiDuAI\Core.BaiDuAI.csproj" />
     <ProjectReference Include="..\Core\Core.Data\Core.Data.csproj" />
     <ProjectReference Include="..\Core\Core.Security\Core.Security.csproj" />
-    <ProjectReference Include="..\Core\Core.Sms\Core.Sms.csproj" />
     <ProjectReference Include="..\Core\Core.System\Core.System.csproj" />
     <ProjectReference Include="..\Core\Core.Util\Core.Util.csproj" />
     <ProjectReference Include="..\Service\Lhs.Common\Lhs.Common.csproj" />
@@ -47,7 +46,6 @@
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="8.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>
