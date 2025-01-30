@@ -26,7 +26,6 @@
   <ItemGroup>
     <ProjectReference Include="..\BattleEngine\BattleEngine.csproj" />
     <ProjectReference Include="..\Core\Core.BaiDuAI\Core.BaiDuAI.csproj" />
-    <ProjectReference Include="..\Core\Core.Cache\Core.Cache.csproj" />
     <ProjectReference Include="..\Core\Core.Data\Core.Data.csproj" />
     <ProjectReference Include="..\Core\Core.Security\Core.Security.csproj" />
     <ProjectReference Include="..\Core\Core.Sms\Core.Sms.csproj" />

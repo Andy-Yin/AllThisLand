@@ -70,7 +70,6 @@
 
     <ItemGroup>
         <ProjectReference Include="..\..\Core\Core.BaiDuAI\Core.BaiDuAI.csproj" />
-        <ProjectReference Include="..\..\Core\Core.Cache\Core.Cache.csproj" />
         <ProjectReference Include="..\..\Core\Core.System\Core.System.csproj" />
         <ProjectReference Include="..\..\Core\Core.Util\Core.Util.csproj" />
         <ProjectReference Include="..\Lhs.Common\Lhs.Common.csproj" />
