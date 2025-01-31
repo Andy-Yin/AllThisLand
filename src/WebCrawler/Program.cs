@@ -6,18 +6,19 @@ using System.Xml.Linq;
 
 class Program
 {
-    static void Main()
+    static async Task Main()
     {
         string baseUrl = "https://stzb.163.com/herolist/";
         var heroList = new List<T_Hero>();
+
+        using HttpClient client = new HttpClient();
 
         for (int i = 100001; i <= 100358; i++)
         {
             try
             {
                 string url = baseUrl + i + ".html";
-                WebClient client = new WebClient();
-                string html = client.DownloadString(url);
+                string html = await client.GetStringAsync(url);
 
                 HtmlDocument doc = new HtmlDocument();
                 doc.LoadHtml(html);
@@ -47,11 +48,11 @@ class Program
                 //[Description("骑兵")]
                 //CorpsCavalry = 3
                 EnumCorps troopType;
-                if (tmpTroopType =="弓")
+                if (tmpTroopType == "弓")
                 {
                     troopType = EnumCorps.CorpsArcher;
                 }
-                else if(tmpTroopType=="步")
+                else if (tmpTroopType == "步")
                 {
                     troopType = EnumCorps.CorpsInfantry;
                 }
@@ -80,56 +81,30 @@ class Program
                 string decomposeMagic = doc.DocumentNode.SelectSingleNode("//dt[contains(text(), '可拆战法')]").SelectSingleNode("following-sibling::dd[1]").InnerText.Trim();
 
 
-                var hero = new T_Hero();
-                hero.Name = name;
-                hero.Desc = desc;
-                hero.Star = starLevel;
+                var hero = new T_Hero
+                {
+                    Name = name,
+                    Desc = desc,
+                    Star = starLevel,
+                    Cost = cost,
+                    AttackRange = attackRange,
+                    Corps = troopType,
+                    InitialStrategy = initialStrategy,
+                    InitialAttack = initialAttack,
+                    InitialSiege = initialSiege,
+                    InitialDefense = initialDefense,
+                    InitialSpeed = initialSpeed,
+                    DefaultMagic = initialMagic
+                };
 
-                hero.Cost = cost;
-                hero.AttackRange = attackRange;
-                hero.Corps = troopType;
-
-                hero.InitialStrategy = initialStrategy;
-                hero.InitialAttack = initialAttack;
-                hero.InitialSiege = initialSiege;
-
-               
-                hero.InitialDefense = initialDefense;
-                hero.InitialSpeed = initialSpeed;
-                
-
-                hero.DefaultMagic = initialMagic;                
-                
                 heroList.Add(hero);
-                
-
-
-                //Console.WriteLine("Name: " + name);
-                //Console.WriteLine("desc: " + desc);
-                //Console.WriteLine("星级:" + starLevel);
-
-                //Console.WriteLine("troopType兵种: " + troopType);
-                //Console.WriteLine("Cost: " + cost);
-                //Console.WriteLine("Attack Range攻击距离: " + attackRange);
-                //Console.WriteLine("Initial Strategy初始谋略: " + initialStrategy);
-                //Console.WriteLine("Initial Attack初始攻击: " + initialAttack);
-                //Console.WriteLine("Initial Siege初始攻城: " + initialSiege);
-                //Console.WriteLine("Initial Defense初始防御: " + initialDefense);
-                //Console.WriteLine("Initial Speed初始速度: " + initialSpeed);
-                //Console.WriteLine("基础战法: " + initialMagic);
-                //Console.WriteLine("可拆战法: " + decomposeMagic);
-
-                //Console.WriteLine("Name: " + name + " desc: " + desc + " Cost: " + cost + " Attack Range: " + attackRange + " Initial Strategy: " + initialStrategy + " Initial Attack: " + initialAttack + " Initial Siege: " + initialSiege + " Initial Defense: " + initialDefense + " Initial Speed: " + initialSpeed);
-
 
                 Console.WriteLine("------------" + i + "--------------");
             }
             catch (Exception e)
             {
-
-                Console.WriteLine("-=====================----------" + e.Message +i+ "--===========================------------");
+                Console.WriteLine("-=====================----------" + e.Message + i + "--===========================------------");
             }
-            
         }
     }
 }

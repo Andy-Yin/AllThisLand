@@ -24,10 +24,10 @@ namespace ImageRunner
         public void GeneralHeroInfo()
         {
             //var baseHeroImgFolder = "\\Img\\Hero\\";
-            var basePath = "D:\\test\\"; // Directory.GetCurrentDirectory();
+           
             // var heroImgFolder = Path.Combine(basePath, baseHeroImgFolder);
             // 读取所有文件名
-            var imgList = GetFilesIncludingSubfolders(basePath);
+            var imgList = GetFilesIncludingSubfolders();
 
             // 读取所有图片
             foreach (var imgPath in imgList)
@@ -149,12 +149,20 @@ namespace ImageRunner
         }
         /// <summary>
         /// 获取文件夹下所有图片
+        /// 文件夹目录为程序运行目录的"BattleImagePath"，
+        /// 如果没有该文件夹则创建该文件夹，如果内部没有文件，则返回空List。
         /// </summary>
-        private static List<string> GetFilesIncludingSubfolders(string path, string searchPattern= "*.jpg")
+        private static List<string> GetFilesIncludingSubfolders(string searchPattern = "*.jpg")
         {
+            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "BattleImagePath");
             List<string> paths = new List<string>();
 
-            paths.AddRange(Directory.GetFiles(path, searchPattern).ToList());
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+
+            paths.AddRange(Directory.GetFiles(path, searchPattern, SearchOption.AllDirectories).ToList());
             return paths;
         }
 
